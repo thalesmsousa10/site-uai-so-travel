@@ -1,313 +1,238 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uai Sô Travel | Experiências VIP & Celebrações</title>
+  <meta name="description" content="Coleção de experiências exclusivas: Lua de Mel nas Maldivas, Formatura em Cancun, Bodas na Toscana e Aniversários em Nova York.">
+  <meta name="theme-color" content="#FFD700">
+  <link rel="icon" type="image/png" href="./assets/mascot_galinho.png">
 
-<html lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Experiências VIP - Uai Sô Travel</title>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-        .material-symbols-outlined.filled {
-            font-variation-settings: 'FILL' 1;
-        }
-        
-        /* Custom Scroll Animations */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .reveal-delay-1 { transition-delay: 0.1s; }
-        .reveal-delay-2 { transition-delay: 0.2s; }
-        .reveal-delay-3 { transition-delay: 0.3s; }
-        
-        /* Luminous Hover Effects */
-        .glow-hover {
-            transition: box-shadow 0.3s ease;
-        }
-        .glow-hover:hover {
-            box-shadow: 0 10px 30px -10px rgba(112, 93, 0, 0.2); /* primary color glow */
-        }
-    </style>
-<!-- Tailwind Config -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "horizon-blue": "#005B96",
-                        "surface-bright": "#fff9ef",
-                        "on-error-container": "#93000a",
-                        "on-tertiary-fixed-variant": "#004f54",
-                        "surface-container-highest": "#eae2cf",
-                        "on-primary-fixed-variant": "#544600",
-                        "surface-container": "#f6edda",
-                        "inverse-surface": "#343024",
-                        "secondary": "#0c6780",
-                        "surface-dim": "#e1d9c7",
-                        "on-primary": "#ffffff",
-                        "inverse-primary": "#e9c400",
-                        "secondary-container": "#9ae1ff",
-                        "primary": "#705d00",
-                        "secondary-fixed-dim": "#89d0ed",
-                        "outline": "#7e775f",
-                        "on-secondary": "#ffffff",
-                        "prestige-gold": "#D4AF37",
-                        "on-primary-container": "#705e00",
-                        "soft-mist": "#F8FAFC",
-                        "inverse-on-surface": "#f9f0dd",
-                        "primary-container": "#ffd700",
-                        "on-secondary-container": "#09657f",
-                        "tertiary-fixed": "#79f5ff",
-                        "error": "#ba1a1a",
-                        "outline-variant": "#d0c6ab",
-                        "surface-variant": "#eae2cf",
-                        "on-error": "#ffffff",
-                        "tertiary": "#00696f",
-                        "on-secondary-fixed": "#001f29",
-                        "surface-tint": "#705d00",
-                        "surface-container-lowest": "#ffffff",
-                        "on-primary-fixed": "#221b00",
-                        "warm-shadow": "#2D2D2D",
-                        "surface-container-low": "#fbf3e0",
-                        "on-tertiary-container": "#006a70",
-                        "luminous-white": "#FFFFFF",
-                        "on-surface-variant": "#4d4732",
-                        "on-tertiary-fixed": "#002022",
-                        "on-background": "#1f1b10",
-                        "primary-fixed-dim": "#e9c400",
-                        "tertiary-container": "#00f1ff",
-                        "surface-container-high": "#f0e7d5",
-                        "error-container": "#ffdad6",
-                        "on-secondary-fixed-variant": "#004d62",
-                        "on-tertiary": "#ffffff",
-                        "secondary-fixed": "#baeaff",
-                        "tertiary-fixed-dim": "#00dbe8",
-                        "primary-fixed": "#ffe16d",
-                        "surface": "#fff9ef",
-                        "on-surface": "#1f1b10",
-                        "background": "#fff9ef"
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    spacing: {
-                        "mobile-margin": "20px",
-                        "section-padding": "120px",
-                        "unit": "8px",
-                        "gutter": "24px",
-                        "container-max": "1280px"
-                    },
-                    fontFamily: {
-                        "quote-accent": ["Montserrat", "sans-serif"],
-                        "subheading": ["Montserrat", "sans-serif"],
-                        "headline-lg-mobile": ["Montserrat", "sans-serif"],
-                        "display-hero": ["Montserrat", "sans-serif"],
-                        "body-base": ["Montserrat", "sans-serif"],
-                        "headline-lg": ["Montserrat", "sans-serif"],
-                        "label-caps": ["Montserrat", "sans-serif"]
-                    },
-                    fontSize: {
-                        "quote-accent": ["24px", { "lineHeight": "1.4", "fontWeight": "300" }],
-                        "subheading": ["20px", { "lineHeight": "1.5", "fontWeight": "500" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "display-hero": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "body-base": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }]
-                    }
-                }
-            }
-        }
-    </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Inter:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+  <script type="module" crossorigin src="./assets/main-CNhUhGbW.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-CVji0fqL.css">
 </head>
-<body class="bg-surface text-on-surface antialiased">
-<!-- TopNavBar -->
-<header class="bg-transparent backdrop-blur-md dark:bg-transparent docked full-width top-0 sticky z-50 bg-luminous-white/80 dark:bg-inverse-surface/80 border-b border-outline-variant/30 flat no shadows">
-<div class="flex justify-between items-center w-full px-mobile-margin md:px-gutter max-w-container-max mx-auto py-4">
-<!-- Brand -->
-<a class="font-display-hero text-headline-lg-mobile text-primary dark:text-primary-fixed" href="index.html">
-                Uai Sô Travel
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-sun-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="6" fill="#FFFFFF"/>
+            <path d="M12 2V4M12 20V22M4 12H2M22 12H20M6.3 6.3L4.9 4.9M19.1 19.1L17.7 17.7M6.3 17.7L4.9 19.1M19.1 4.9L17.7 6.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <div class="logo-brand-script">Uai Sô ☕</div>
+          <div class="logo-brand-travel">
+            <span class="stripe-wing stripe-yellow"></span>
+            <span class="stripe-wing stripe-red"></span>
+            TRAVEL
+            <span class="stripe-wing stripe-red"></span>
+            <span class="stripe-wing stripe-yellow"></span>
+          </div>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="quem-somos.html" class="nav-link">Quem Somos</a>
+        <a href="experiencias.html" class="nav-link active">Experiências</a>
+        <a href="destinos.html" class="nav-link">Destinos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contato.html" class="btn-header">
+          <span>Personalizar Viagem</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO EXPERIENCIAS -->
+    <section class="section" style="padding: 70px 0 40px; text-align: center; background: var(--bg-surface-low);">
+      <div class="container reveal-item">
+        <span class="section-tag label-caps">[ COLEÇÃO DE CELEBRAÇÕES ]</span>
+        <h1 class="section-title">Experiências VIP Sob Medida</h1>
+        <p class="section-subtitle" style="max-width: 760px; margin: 0 auto;">
+          Momentos especiais pedem uma curadoria à altura. Criamos viagens personalizadas para celebrar as grandes vitórias e amores da sua vida.
+        </p>
+      </div>
+    </section>
+
+    <!-- GRID DE EXPERIÊNCIAS -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="experiences-grid-3">
+          
+          <!-- 1. Lua de Mel -->
+          <div class="exp-card-v3 reveal-item">
+            <div class="exp-image-wrap">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuASxdLcqiBxT2w_k9kp08EbNG2f_2UI0p7Qzol1qeVOjqWjsddTKWULy2cJgOqW0S6t69ykE_gMuY1gmuN0w0pckoDMc46Rn_4c7Ve3zZ_LX_xU7pHWx2-2Za5Iqtysh6mZ2LK1g5d67wC_xQyOVRS3N6Akkv9nX1O_IeBurtNFpQCsegv09GkWW1HgbHpu4nBEnVFjMrEoNuMuLwFIvbjeGNJfm8cS7eVYraqyXl6xbmj10ctiGvAI2w" alt="Maldivas Lua de Mel">
+            </div>
+            <div class="exp-body-v3">
+              <span class="exp-tag-pill label-caps">💍 ROMANCE ABSOLUTO</span>
+              <h3 class="exp-title-v3">Lua de Mel nas Maldivas</h3>
+              <p class="exp-desc-v3">
+                Bangalôs suspensos sobre a lagoa azul-turquesa, café da manhã flutuante na piscina privativa, massagens para o casal ao pôr do sol e jantares à luz de velas sob as estrelas.
+              </p>
+              <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Gostaria%20de%20personalizar%20uma%20Lua%20de%20Mel%20nas%20Maldivas." target="_blank" rel="noopener" class="btn-primary" style="padding: 12px 24px; font-size: 0.95rem; justify-content: center;">
+                <span>Personalizar Lua de Mel</span> →
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Formatura -->
+          <div class="exp-card-v3 reveal-item">
+            <div class="exp-image-wrap">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZrzWSliqHF_9a_AYyq91U-pfI_Y7NZHinEXu5I3VijD38uvPRC8e4k-fozcwjFKuabIIi0xI2zRd293a5Ct4_nDRRX6BTJdAGRcO-6tkRgYZ7-PlJtrouzWHDhENmE1CZu4NqJ8EV5WM_QRO0dzsaJuJljw2N9HY-PCPjldVrHnpXbTzyJrM7y4X2RBuTNeKJIlDyWV88HRiIBamP_e74O5xUO4jMB9NtCnX0Qi-4Ai-GdWFNNNJcgQ" alt="Cancun Formatura">
+            </div>
+            <div class="exp-body-v3">
+              <span class="exp-tag-pill label-caps">🎓 CONQUISTA & CELEBRAÇÃO</span>
+              <h3 class="exp-title-v3">Formatura em Cancun</h3>
+              <p class="exp-desc-v3">
+                Comemore anos de dedicação em resorts de altíssimo padrão com tudo incluso, festas exclusivas em catamarãs particulares em Isla Mujeres e mergulho nos cenotes sagrados.
+              </p>
+              <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Gostaria%20de%20personalizar%20uma%20Viagem%20de%20Formatura." target="_blank" rel="noopener" class="btn-primary" style="padding: 12px 24px; font-size: 0.95rem; justify-content: center;">
+                <span>Personalizar Formatura</span> →
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Bodas na Toscana -->
+          <div class="exp-card-v3 reveal-item">
+            <div class="exp-image-wrap">
+              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800&q=80" alt="Bodas na Toscana">
+            </div>
+            <div class="exp-body-v3">
+              <span class="exp-tag-pill label-caps">🥂 RENOVAÇÃO DE VOTOS</span>
+              <h3 class="exp-title-v3">Bodas na Toscana</h3>
+              <p class="exp-desc-v3">
+                Renove seus votos entre as colinas douradas e ciprestes da Itália. Hospedagem em castelos e vilas históricas com degustação privativa de vinhos Brunello e jantares ao ar livre.
+              </p>
+              <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Gostaria%20de%20personalizar%20minhas%20Bodas%20na%20Toscana." target="_blank" rel="noopener" class="btn-primary" style="padding: 12px 24px; font-size: 0.95rem; justify-content: center;">
+                <span>Personalizar Bodas</span> →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- O QUE ESTÁ INCLUSO NAS EXPERIÊNCIAS -->
+    <section class="section" style="background: var(--bg-surface-low);">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-tag label-caps">[ PADRÃO EXCLUSIVO ]</span>
+          <h2 class="section-title">O que toda Experiência VIP inclui</h2>
+          <p class="section-subtitle">Você não precisa se preocupar com reservas ou burocracias.</p>
+        </div>
+
+        <div class="services-grid-4">
+          
+          <div class="service-card-clean reveal-item">
+            <div class="service-icon-wrap">🥂</div>
+            <h4 class="service-title-clean">Recepção de Boas-Vindas</h4>
+            <p class="service-desc-clean">Champagne no quarto e amenidades especiais preparadas pelo hotel.</p>
+          </div>
+
+          <div class="service-card-clean reveal-item">
+            <div class="service-icon-wrap">🚗</div>
+            <h4 class="service-title-clean">Transfers Privativos</h4>
+            <p class="service-desc-clean">Carro executivo esperando por você na saída do aeroporto sem filas.</p>
+          </div>
+
+          <div class="service-card-clean reveal-item">
+            <div class="service-icon-wrap">⛵</div>
+            <h4 class="service-title-clean">Passeios Exclusivos</h4>
+            <p class="service-desc-clean">Iates privativos, guias historiadores e acessos sem fila às principais atrações.</p>
+          </div>
+
+          <div class="service-card-clean reveal-item">
+            <div class="service-icon-wrap">📱</div>
+            <h4 class="service-title-clean">Concierge Dedicado 24h</h4>
+            <p class="service-desc-clean">Um consultor exclusivo no seu WhatsApp durante todos os dias da viagem.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BANNER DE CONTATO -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-cta-solar reveal-item">
+          <span class="label-caps" style="color: var(--primary-ochre); margin-bottom: 14px;">[ MOMENTO ÚNICO ]</span>
+          <h2 class="contact-cta-title">Quer criar uma celebração inesquecível sob medida?</h2>
+          <div class="contact-cta-btns">
+            <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Gostaria%20de%20planejar%20uma%20experi%C3%AAncia%20VIP%20personalizada." target="_blank" rel="noopener" class="btn-primary">
+              <span>Falar com Concierge VIP no WhatsApp</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 8h14M8 1l7 7-7 7"/></svg>
             </a>
-<!-- Desktop Nav -->
-<nav class="hidden md:flex gap-8 items-center font-body-base text-body-base">
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="quem-somos.html">Quem Somos</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1" href="experiencias.html">Experiências</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="destinos.html">Destinos</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="contato.html">Contato</a>
-</nav>
-<!-- Action -->
-<div class="hidden md:block">
-<a class="inline-block bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-subheading text-body-base font-semibold hover:bg-primary/10 transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#">
-                    Personalizar Viagem
-                </a>
-</div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined text-headline-lg-mobile">menu</span>
-</button>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="relative min-h-[921px] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="bg-cover bg-center w-full h-full" data-alt="A breathtaking, ultra-high-definition panoramic view of a luxury overwater villa in the Maldives at sunrise. The scene is illuminated by brilliant, high-key morning light, creating a 'luminous minimalism' aesthetic. The pristine, crystal-clear turquoise waters reflect the soft pastel hues of the dawn sky. The architecture of the villa is sleek and modern, utilizing light woods and expansive glass, contrasting beautifully against the natural splendor. The overall mood is airy, expansive, deeply premium, and serene." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1lKrwoakT-2Pq79tO3LNdgOb9bBCz7QPPgpktdhBmOTHfz4LtK-P6jrRT5rp0z4m253cy2NhdYBveXtH4Y21cUZJ4gVdTjL8mUBNExlPBO_ZJQMIZbjLBF9l4t0ZXeZ6uFYgPYrrlcLucQhaYSTAZCo61diEP4BZu-lZzm0jeR_Pq3A-as3IYV3km4rNJqNxHuTwBkrUdMjNw_yVvYJqPsHf58mnLvJ3giJ9HyBzvzFaNngBKX1QbKg')"></div>
-<!-- Glassmorphic Overlay for Legibility -->
-<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/10 to-surface backdrop-blur-[2px]"></div>
-</div>
-<div class="relative z-10 text-center px-mobile-margin md:px-gutter max-w-3xl mx-auto reveal">
-<span class="inline-block font-label-caps text-label-caps text-primary tracking-widest uppercase mb-4 px-4 py-1 bg-surface-bright/80 backdrop-blur-md rounded-full border border-primary/20">Coleção Premium</span>
-<h1 class="font-display-hero text-headline-lg-mobile md:text-display-hero text-on-surface mb-6">Experiências que Marcam a Vida</h1>
-<p class="font-quote-accent text-quote-accent text-on-surface-variant">Momentos singulares desenhados com precisão global e o inconfundível acolhimento mineiro.</p>
-</div>
-</section>
-<!-- Narrative Section -->
-<section class="py-section-padding px-mobile-margin md:px-gutter bg-surface-bright">
-<div class="max-w-container-max mx-auto text-center reveal">
-<span class="material-symbols-outlined text-4xl text-prestige-gold mb-6 filled">stars</span>
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8 max-w-4xl mx-auto">Elevamos sua jornada: Da consultoria atenciosa ao destino extraordinário.</h2>
-<div class="flex flex-col md:flex-row gap-12 justify-center items-start mt-16 text-left">
-<div class="flex-1 reveal reveal-delay-1">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary">public</span>
-<h3 class="font-subheading text-subheading text-on-surface">Prestígio Global</h3>
-</div>
-<p class="font-body-base text-body-base text-on-surface-variant">Acesso exclusivo aos recantos mais cobiçados do mundo. Parcerias sólidas com redes de luxo garantem benefícios únicos e uma logística impecável em qualquer continente.</p>
-</div>
-<!-- Divider -->
-<div class="hidden md:flex items-center justify-center text-outline-variant py-4">✦</div>
-<div class="flex-1 reveal reveal-delay-2">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary">favorite</span>
-<h3 class="font-subheading text-subheading text-on-surface">Alma Mineira</h3>
-</div>
-<p class="font-body-base text-body-base text-on-surface-variant">O luxo que abraça. Nosso diferencial reside no cuidado minucioso, na escuta ativa e na dedicação calorosa em cada etapa do planejamento, fazendo você se sentir em casa, onde quer que vá.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Bento Grid Categories -->
-<section class="py-section-padding px-mobile-margin md:px-gutter bg-surface">
-<div class="max-w-container-max mx-auto">
-<div class="mb-16 text-center reveal">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Momentos Eternizados</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-unit auto-rows-[400px]">
-<!-- Lua de Mel (Spans 8 cols) -->
-<div class="md:col-span-8 relative rounded-[24px] overflow-hidden group reveal glow-hover">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated and romantic private dining setup on a pristine, white-sand beach at sunset. The lighting captures the 'Global Sunrise' aesthetic with a warm, luminous golden hour glow blending into soft pastel twilight colors. The table is elegantly adorned with fine china, crystal glasses, and delicate tropical flowers. In the background, the gentle waves of the crystal-clear ocean lap the shore. The atmosphere is immensely luxurious, intimate, and perfectly curated for an exclusive honeymoon experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeZ_8czESvecgLLOEpQofG1EUmlRGEDp6QnwOMtAt7EjZj2vyBqJMmXOxZxL40ZB61yFIfHGtuSQn5oMBe2-xGB3xhmhKypBWcI4LuFQKRBLBCEdGhAWdd2rnaXMK555eLP4GiKYD3fMMdyOe7DhvlGLsT8k4JC-pQ-iifLE_9vQvWJe3jD77zkvpqkwYAGT5R2vRjLy-bHpTTnJN2RSlndcWRiwwjnWWkFIs1vwy5-KmRtMCj82zzmQ')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
-<div class="absolute bottom-0 left-0 right-0 p-8">
-<div class="bg-surface-bright/90 backdrop-blur-md rounded-[16px] p-6 border border-luminous-white/50 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-<span class="font-label-caps text-label-caps text-horizon-blue mb-2 block">[ ROMANCE ABSOLUTO ]</span>
-<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Lua de Mel</h3>
-<p class="font-body-base text-body-base text-on-surface-variant mb-4">Refúgios isolados nas Maldivas ou o charme rústico da Polinésia. Desenhamos cenários perfeitos para o início da vida a dois, com detalhes surpreendentes aguardando em cada destino.</p>
-<a class="inline-flex items-center gap-2 font-subheading text-body-base text-primary hover:text-horizon-blue transition-colors" href="#">
-                                Explorar Roteiros <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Viagem de Formatura (Spans 4 cols) -->
-<div class="md:col-span-4 relative rounded-[24px] overflow-hidden group reveal reveal-delay-1 glow-hover">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A vibrant, high-end luxury yacht sailing through the spectacularly clear, turquoise waters of Cancun under a bright, cloudless sky. The scene is infused with 'luminous minimalism' through high-key lighting, emphasizing the gleaming white surfaces of the yacht and the vivid blue of the ocean. The atmosphere is energetic yet exclusively premium, suggesting a sophisticated graduation celebration or exclusive group getaway." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiTIOeAOXvVRTCtEUSJv0T-vb-L2IMRdXVrMlySJTQdMewqGclsJK8l04XzXzcwrk34kg-7Te3h-_a_lz0FDHiFb_rkz2M4b_z_K9kYNHPLnXzsAgwUyneK-H1v9TQuzafVHkVvLG_byDAFPnWPtiL_aZFYZiiLs88dCeZVXeIi-t33BXnwj95ZuR1D_dGaI3wv21CJkV4o6TsaEoCAG2Lz_8NUeSTrVlvYNvDx__mqLuV51PBbRb97A')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
-<div class="absolute bottom-0 left-0 right-0 p-6">
-<div class="bg-surface-bright/90 backdrop-blur-md rounded-[16px] p-5 border border-luminous-white/50">
-<span class="font-label-caps text-label-caps text-primary mb-2 block">[ ENERGIA PREMIUM ]</span>
-<h3 class="font-subheading text-subheading text-on-surface mb-2">Viagem de Formatura</h3>
-<p class="font-body-base text-body-base text-on-surface-variant mb-4 text-sm line-clamp-3">Celebre a conquista em grande estilo. Clubes exclusivos em Cancún ou aventuras premium em destinos vibrantes, com segurança total e curadoria impecável.</p>
-</div>
-</div>
-</div>
-<!-- Datas Comemorativas (Spans 12 cols, distinct layout) -->
-<div class="md:col-span-12 relative rounded-[24px] overflow-hidden group reveal glow-hover mt-gutter">
-<div class="absolute inset-0 flex">
-<div class="w-full md:w-2/3 h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A breathtaking view of a lush Tuscan vineyard bathed in golden afternoon sunlight. The scene embodies a luxurious, airy aesthetic with rolling green hills fading into a soft, hazy horizon. In the foreground, an elegant, rustic-chic outdoor lounge area is set up under the shade of ancient olive trees, featuring premium comfortable seating and glasses of fine wine. The mood is calm, deeply premium, and perfect for a milestone anniversary celebration." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCf-fnEJ1HyHpx3aymgiCcHM2ZBoPQ_7nVW4DDsGXj06DXHWlveyTga6dH60a00LVYXLzYhorucfDZr-UglNElX7gbr6s_Gygh5lnsx0r0sr0DErnHCk-Cnw9227iQnqiUI2qdXIetj7rw4-g1JqZ3no28rx90ICCo7bCQFsxBWW2FyjiEb7bsH4I4eSmv97XjXcGuPAhZgS8YhKMZX3EGwIQ2c9E6NJpRDbNGWtjvhllP72bzPgxAlTQ')"></div>
-<div class="hidden md:block w-1/3 bg-surface-container-low h-full relative z-10"></div>
-</div>
-<!-- Content overlay spanning across -->
-<div class="absolute inset-0 flex flex-col md:flex-row">
-<div class="hidden md:block w-7/12"></div> <!-- Spacer for image -->
-<div class="w-full md:w-5/12 bg-surface-container-low/95 md:bg-surface-container-low backdrop-blur-md md:backdrop-blur-none p-8 md:p-12 flex flex-col justify-center border-l border-outline-variant/20"><span class="font-label-caps text-label-caps text-prestige-gold mb-3 block">[ CELEBRAÇÕES ]</span><h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Bodas na Toscana</h3><p class="font-body-base text-body-base text-on-surface-variant mb-6">Renove seus votos entre as colinas douradas da Itália. Degustações de vinhos exclusivos, vilarejos históricos e jantares românticos ao pôr do sol.</p><ul class="space-y-3 mb-8"><li class="flex items-center gap-3 font-body-base text-body-base text-on-surface"><span class="material-symbols-outlined text-primary">done_all</span> Roteiros 100% Personalizados</li><li class="flex items-center gap-3 font-body-base text-body-base text-on-surface"><span class="material-symbols-outlined text-primary">room_service</span> Concierge 24h Dedicado</li></ul><a class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary px-6 py-3 rounded-full font-subheading text-body-base font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all duration-300" href="#">Personalizar Bodas</a></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="py-section-padding px-mobile-margin md:px-gutter bg-inverse-surface text-surface-bright text-center relative overflow-hidden">
-<!-- Abstract light graphic -->
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[800px] h-[400px] bg-primary/20 blur-[100px] rounded-full pointer-events-none opacity-50"></div>
-<div class="relative z-10 max-w-2xl mx-auto reveal">
-<h2 class="font-display-hero text-headline-lg-mobile md:text-headline-lg mb-6">Pronto para a Próxima Grande Viagem?</h2>
-<p class="font-quote-accent text-quote-accent text-surface-dim mb-10">Fale com nossos especialistas e inicie o planejamento do seu roteiro VIP com o verdadeiro carinho mineiro.</p>
-<a class="inline-flex items-center justify-center gap-2 bg-secondary text-on-primary px-8 py-4 rounded-full font-subheading text-body-base font-bold hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 shadow-[0_0_20px_rgba(12,103,128,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] border border-prestige-gold/30" href="#">
-<img alt="WhatsApp" class="w-6 h-6 hidden" data-alt="A minimal, flat icon of the WhatsApp logo rendered in pure black against a white background, fitting seamlessly into a high-end, clean user interface design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv4qTFp669vlw3l79T20RvJ9RgbDw1jhoDrsdR-zvq6fgyGm33hH9b2sHbYXVpvikl7ps_pWOUId5F6C02GXDfVkZ8W5-i6hVEdS_zHI5vPGHJ_Ozmp8gFJ9MIGHT2ZfZ-eONyMDuj30dvGfiT08XOVCPoY-MIcnC2pYQwNlewpWJZRAyhiw14XV7kXc4ehkIaeQVZqaku7Z1yrqNyL6PaSPmvq_OQ7MeMNvuVlJYMRbfwrg4b7srBHw"/> <!-- Using text instead for cleaner look, simulating icon if needed -->
-<span>Conversar pelo WhatsApp</span>
-</a>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest dark:bg-inverse-surface full-width border-t border-outline-variant/50 flat no shadows">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-mobile-margin md:px-gutter py-section-padding max-w-container-max mx-auto">
-<!-- Brand Column -->
-<div class="col-span-1 flex flex-col gap-4">
-<span class="font-display-hero text-subheading text-primary dark:text-primary-fixed">Uai Sô Travel</span>
-<p class="font-body-base text-body-base text-on-surface-variant opacity-80">Excelência Global, Alma Mineira.</p>
-</div>
-<!-- Links Column 1 -->
-<div class="col-span-1 flex flex-col gap-3">
-<a class="font-body-base text-body-base text-on-surface-variant hover:text-horizon-blue underline transition-all opacity-80 hover:opacity-100" href="#">Termos de Uso</a>
-<a class="font-body-base text-body-base text-on-surface-variant hover:text-horizon-blue underline transition-all opacity-80 hover:opacity-100" href="#">Política de Privacidade</a>
-</div>
-<!-- Links Column 2 -->
-<div class="col-span-1 flex flex-col gap-3">
-<a class="font-body-base text-body-base text-on-surface-variant hover:text-horizon-blue underline transition-all opacity-80 hover:opacity-100" href="#">WhatsApp BR</a>
-<a class="font-body-base text-body-base text-on-surface-variant hover:text-horizon-blue underline transition-all opacity-80 hover:opacity-100" href="#">WhatsApp PT</a>
-</div>
-<!-- Copyright -->
-<div class="col-span-1 flex items-end justify-start md:justify-end">
-<span class="font-body-base text-body-base text-secondary dark:text-secondary-fixed text-sm">
-                    © 2024 Uai Sô Travel
-                </span>
-</div>
-</div>
-</footer>
-<!-- Intersection Observer Script for Reveal Animations -->
-<script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const reveals = document.querySelectorAll('.reveal');
+          </div>
+        </div>
+      </div>
+    </section>
 
-            const revealOnScroll = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                root: null,
-                threshold: 0.15,
-                rootMargin: "0px 0px -50px 0px"
-            });
+  </main>
 
-            reveals.forEach(reveal => {
-                revealOnScroll.observe(reveal);
-            });
-        });
-    </script>
-</body></html>
+  <!-- FOOTER -->
+  <footer class="footer-clean">
+    <div class="container">
+      <div class="footer-inner-row">
+        <div class="footer-brand-info">
+          <div class="logo">
+            <div class="logo-sun-icon" style="width: 36px; height: 36px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="6" fill="#FFFFFF"/>
+                <path d="M12 2V4M12 20V22M4 12H2M22 12H20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <div class="logo-brand-script" style="font-size: 1.4rem;">Uai Sô ☕</div>
+              <div class="logo-brand-travel">TRAVEL</div>
+            </div>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            © 2026 Uai Sô Travel. Excelência Global, Alma Mineira.
+          </p>
+        </div>
+
+        <div class="footer-links-row">
+          <a href="index.html">Início</a>
+          <a href="quem-somos.html">Quem Somos</a>
+          <a href="experiencias.html">Experiências</a>
+          <a href="destinos.html">Destinos</a>
+          <a href="contato.html">Contato</a>
+          <a href="https://wa.me/5535991234567" target="_blank" rel="noopener">WhatsApp BR</a>
+          <a href="https://wa.me/351999999999" target="_blank" rel="noopener">WhatsApp PT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5535991234567" target="_blank" rel="noopener" class="float-wa-btn">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span>Fale Conosco</span>
+  </a>
+
+</body>
+</html>

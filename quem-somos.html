@@ -1,282 +1,225 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uai Sô Travel | Quem Somos</title>
+  <meta name="description" content="Conheça a história da Dra. Liliam Silva e a alma acolhedora da Uai Sô Travel. Do coração de Minas para o mundo.">
+  <meta name="theme-color" content="#FFD700">
+  <link rel="icon" type="image/png" href="./assets/mascot_galinho.png">
 
-<html class="light" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Quem Somos - Uai Sô Travel</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-surface-variant": "#4d4732",
-                        "surface-tint": "#705d00",
-                        "on-error-container": "#93000a",
-                        "primary-container": "#ffd700",
-                        "surface-variant": "#eae2cf",
-                        "surface-dim": "#e1d9c7",
-                        "on-secondary-fixed-variant": "#004d62",
-                        "on-secondary-fixed": "#001f29",
-                        "on-background": "#1f1b10",
-                        "on-tertiary-container": "#006a70",
-                        "surface-container-highest": "#eae2cf",
-                        "outline": "#7e775f",
-                        "inverse-on-surface": "#f9f0dd",
-                        "on-tertiary-fixed-variant": "#004f54",
-                        "on-secondary": "#ffffff",
-                        "primary": "#705d00",
-                        "secondary-fixed": "#baeaff",
-                        "error-container": "#ffdad6",
-                        "on-primary-container": "#705e00",
-                        "warm-shadow": "#2D2D2D",
-                        "prestige-gold": "#D4AF37",
-                        "tertiary-fixed-dim": "#00dbe8",
-                        "on-primary-fixed": "#221b00",
-                        "surface-bright": "#fff9ef",
-                        "error": "#ba1a1a",
-                        "primary-fixed-dim": "#e9c400",
-                        "tertiary-fixed": "#79f5ff",
-                        "on-surface": "#1f1b10",
-                        "secondary-fixed-dim": "#89d0ed",
-                        "horizon-blue": "#005B96",
-                        "inverse-primary": "#e9c400",
-                        "on-tertiary": "#ffffff",
-                        "soft-mist": "#F8FAFC",
-                        "tertiary-container": "#00f1ff",
-                        "outline-variant": "#d0c6ab",
-                        "on-primary-fixed-variant": "#544600",
-                        "on-tertiary-fixed": "#002022",
-                        "surface-container-high": "#f0e7d5",
-                        "secondary-container": "#9ae1ff",
-                        "on-error": "#ffffff",
-                        "tertiary": "#00696f",
-                        "primary-fixed": "#ffe16d",
-                        "inverse-surface": "#343024",
-                        "secondary": "#0c6780",
-                        "luminous-white": "#FFFFFF",
-                        "on-secondary-container": "#09657f",
-                        "background": "#fff9ef",
-                        "surface": "#fff9ef",
-                        "surface-container": "#f6edda",
-                        "on-primary": "#ffffff",
-                        "surface-container-low": "#fbf3e0",
-                        "surface-container-lowest": "#ffffff"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "mobile-margin": "20px",
-                        "gutter": "24px",
-                        "container-max": "1280px",
-                        "unit": "8px",
-                        "section-padding": "120px"
-                    },
-                    "fontFamily": {
-                        "body-base": ["Montserrat"],
-                        "label-caps": ["Montserrat"],
-                        "headline-lg": ["Montserrat"],
-                        "subheading": ["Montserrat"],
-                        "quote-accent": ["Montserrat"],
-                        "display-hero": ["Montserrat"],
-                        "headline-lg-mobile": ["Montserrat"]
-                    },
-                    "fontSize": {
-                        "body-base": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
-                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "subheading": ["20px", { "lineHeight": "1.5", "fontWeight": "500" }],
-                        "quote-accent": ["24px", { "lineHeight": "1.4", "fontWeight": "300" }],
-                        "display-hero": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        .glass-overlay {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-        }
-        .glow-hover:hover {
-            box-shadow: 0 10px 30px -10px rgba(0, 91, 150, 0.15); /* Horizon Blue glow */
-        }
-        .yellow-glow-hover:hover {
-            box-shadow: 0 10px 30px -10px rgba(255, 215, 0, 0.3); /* Yellow glow */
-        }
-        .divider-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 40px 0;
-        }
-        .divider-icon::before, .divider-icon::after {
-            content: "";
-            flex: 1;
-            border-bottom: 1px solid #d0c6ab; /* outline-variant */
-            margin: 0 40px;
-        }
-    </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Inter:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+  <script type="module" crossorigin src="./assets/main-CNhUhGbW.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-CVji0fqL.css">
 </head>
-<body class="bg-surface text-on-surface font-body-base antialiased">
-<!-- TopNavBar -->
-<nav class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-lg fixed top-0 left-0 w-full z-50 flex justify-between items-center px-mobile-margin py-unit md:px-section-padding max-w-container-max mx-auto bg-transparent flat no shadows border-none">
-<div class="font-headline-lg text-headline-lg font-bold text-horizon-blue dark:text-secondary-fixed">
-            Uai Sô Travel
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-sun-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="6" fill="#FFFFFF"/>
+            <path d="M12 2V4M12 20V22M4 12H2M22 12H20M6.3 6.3L4.9 4.9M19.1 19.1L17.7 17.7M6.3 17.7L4.9 19.1M19.1 4.9L17.7 6.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="quem-somos.html">Quem Somos</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="experiencias.html">Experiências</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="destinos.html">Destinos</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="contato.html">Contato</a>
-</div>
-<div class="hidden md:block">
-<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps rounded-[16px] px-6 py-3 yellow-glow-hover transition-all duration-300 transform hover:scale-95">Personalizar Viagem</button>
-</div>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu</span>
-</button>
-</nav>
-<main class="pt-[100px] md:pt-[120px]">
-<!-- Hero Section -->
-<section class="relative px-mobile-margin md:px-section-padding max-w-container-max mx-auto mb-section-padding">
-<div class="relative h-[60vh] rounded-[24px] overflow-hidden" data-alt="A breathtaking, high-luminosity wide shot of an elegant airport lounge at sunrise, with massive glass windows overlooking the runway. A sleek modern airplane is visible in the background against a soft, golden-hour sky. The interior features luxurious minimalist furniture, warm wood tones, and sophisticated blue accents. The scene conveys international travel, prestige, and a serene, airy atmosphere, adhering to a light-mode aesthetic with high-key lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnLVG1qy5WhKa_8uq8sObN0xXa2fsr6JPQkFjxWVCLM44JpLSt8rlJYJBmURecaw5EgyePu7Z-YUjrD6jfC4wEC9mZpdlBrBvx1qQJtcNzxcOQ4Ws_Wec0KnIsax9LRz9Cx-TW4o7rjJcYcBM-xgukzwPk3glBNy4-aIr9lWr1FLwOAzRRSyIALA8EPLJhj00fMSKMv_9VzDNiLYyzJfZdrpD_rP5_TNVO2rL1Me3u76RGsD-y8XXKGQ')">
-<div class="absolute inset-0 flex flex-col justify-end p-8 md:p-16">
-<div class="glass-overlay rounded-[24px] p-8 md:p-12 max-w-3xl border border-white/20">
-<span class="inline-block bg-soft-mist text-horizon-blue px-3 py-1 rounded-full font-label-caps text-label-caps mb-4 tracking-widest">[ NOSSA ESSÊNCIA ]</span>
-<h1 class="font-display-hero text-display-hero text-on-surface mb-6">Do Coração de Minas para o Mundo</h1>
-<p class="font-quote-accent text-quote-accent text-on-surface-variant">A precisão da curadoria internacional, envelopada com o calor de um bom anfitrião.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Founder Story (Bento Grid) -->
-<section class="px-mobile-margin md:px-section-padding max-w-container-max mx-auto mb-section-padding">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-<div class="md:col-span-5 relative">
-<div class="aspect-[3/4] rounded-[24px] overflow-hidden shadow-sm relative glow-hover transition-shadow duration-300 border border-outline-variant/30">
-<img alt="Dra. Liliam Silva" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvnlsugQgkpA0oHlWG-AXXA-4prkO6Tw4QaY2yVIYgj3_ycUCK2Rlu9XwOSEcOx6fkyUP2sNe0SYVkR68XXuJRp3rqszBhcqBCmgSQL7jcZJscbw8J-4UAu3MLnM9G0SDb-LeE-axh9fHy1SeBYwlJzWpcrdLemOcLzWo3V8EBa2Xm4GKgKNPfYrVXSbUZCsPd_3tB--3EJd4rHscSx_gr_Bo9P4L5DDPRzVo7IN2HQt111xmL93B0sAgRM"/>
-</div>
-<!-- Decorative element -->
-<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-container rounded-full opacity-20 blur-2xl -z-10"></div>
-</div>
-<div class="md:col-span-6 md:col-start-7 flex flex-col gap-8">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">A Trajetória</h2>
-<div class="w-12 h-1 bg-horizon-blue mb-6"></div>
-<p class="font-body-base text-body-base text-on-surface-variant mb-4">
-                            A Uai Sô Travel nasce da vivência global e da alma mineira da Dra. Liliam Silva. Com uma bagagem rica construída em anos de atuação e imersão cultural em metrópoles como Lisboa, Dubai e Qatar, ela transformou o olhar executivo em curadoria de viagens de alto padrão.
-                        </p>
-<p class="font-body-base text-body-base text-on-surface-variant">
-                            Essa jornada intercontinental não apenas forjou uma rede de parceiros exclusivos, mas aguçou a percepção para o que realmente importa em uma viagem: a experiência autêntica, desenhada com exatidão, mas vivida com leveza.
-                        </p>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-surface-container-low p-6 rounded-[16px] border border-outline-variant/20 hover:border-horizon-blue/30 transition-colors">
-<span class="material-symbols-outlined text-horizon-blue mb-3 text-3xl">public</span>
-<h3 class="font-subheading text-subheading mb-2">Visão Global</h3>
-<p class="text-sm text-on-surface-variant">Experiência consolidada nos mercados europeu e árabe.</p>
-</div>
-<div class="bg-surface-container-low p-6 rounded-[16px] border border-outline-variant/20 hover:border-horizon-blue/30 transition-colors">
-<span class="material-symbols-outlined text-horizon-blue mb-3 text-3xl">verified</span>
-<h3 class="font-subheading text-subheading mb-2">Curadoria</h3>
-<p class="text-sm text-on-surface-variant">Seleção rigorosa de parceiros e roteiros exclusivos.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Divider -->
-<div class="px-mobile-margin md:px-section-padding max-w-container-max mx-auto">
-<div class="divider-icon">
-<span class="material-symbols-outlined text-primary text-2xl">coffee</span>
-</div>
-</div>
-<!-- The Concept -->
-<section class="px-mobile-margin md:px-section-padding max-w-container-max mx-auto mb-section-padding text-center">
-<div class="max-w-3xl mx-auto">
-<span class="inline-block text-horizon-blue font-label-caps text-label-caps mb-4 tracking-widest uppercase">O Conceito</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Precisão Executiva, Carinho Mineiro</h2>
-<p class="font-quote-accent text-quote-accent text-on-surface-variant font-light italic mb-12">
-                    "Acreditamos que a logística de uma viagem deve operar com a precisão de um relógio suíço, enquanto o atendimento deve ter o aconchego de um café fresco na varanda de casa."
-                </p>
-</div>
-<!-- Values Cards -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Value 1 -->
-<div class="bg-soft-mist p-10 rounded-[24px] border border-outline-variant/20 flex flex-col items-center text-center glow-hover transition-all duration-300">
-<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-6 text-horizon-blue">
-<span class="material-symbols-outlined text-3xl">tune</span>
-</div>
-<h3 class="font-subheading text-subheading mb-4">Personalização</h3>
-<p class="font-body-base text-body-base text-on-surface-variant text-sm">Roteiros desenhados à mão, milímetro a milímetro, para refletir o seu ritmo e os seus desejos, sem pacotes engessados.</p>
-</div>
-<!-- Value 2 -->
-<div class="bg-soft-mist p-10 rounded-[24px] border border-outline-variant/20 flex flex-col items-center text-center glow-hover transition-all duration-300">
-<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-6 text-prestige-gold">
-<span class="material-symbols-outlined text-3xl">star</span>
-</div>
-<h3 class="font-subheading text-subheading mb-4">Exclusividade</h3>
-<p class="font-body-base text-body-base text-on-surface-variant text-sm">Acesso privilegiado, estadias selecionadas e experiências que transcendem o circuito turístico tradicional.</p>
-</div>
-<!-- Value 3 -->
-<div class="bg-soft-mist p-10 rounded-[24px] border border-outline-variant/20 flex flex-col items-center text-center glow-hover transition-all duration-300">
-<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined text-3xl">favorite</span>
-</div>
-<h3 class="font-subheading text-subheading mb-4">Atendimento Humano</h3>
-<p class="font-body-base text-body-base text-on-surface-variant text-sm">O famoso <em>carinho mineiro</em> aplicado a cada interação. Um acompanhamento próximo e dedicado antes, durante e após o embarque.</p>
-</div>
-</div>
-</section>
-<!-- The Mascot Legend -->
-<section class="px-mobile-margin md:px-section-padding max-w-container-max mx-auto mb-section-padding">
-<div class="bg-surface-container-low rounded-[24px] overflow-hidden border border-outline-variant/20 relative">
-<!-- Decorative background elements -->
-<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-container rounded-full opacity-10 blur-3xl -z-10 translate-x-1/2 -translate-y-1/2"></div>
-<div class="grid grid-cols-1 md:grid-cols-2">
-<div class="p-10 md:p-16 flex flex-col justify-center">
-<span class="inline-block text-horizon-blue font-label-caps text-label-caps mb-4 tracking-widest uppercase">Nosso Símbolo</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">A Lenda do Galinho</h2>
-<p class="font-body-base text-body-base text-on-surface-variant mb-6">
-                            Na cultura de Minas Gerais, o cantar do galo anuncia o alvorecer, um novo dia cheio de possibilidades. Para a Uai Sô Travel, nosso mascote representa o despertar para o mundo.
-                        </p>
-<p class="font-body-base text-body-base text-on-surface-variant">
-                            Ele é o elo constante com as nossas raízes — simples, acolhedor e familiar — mesmo enquanto exploramos os destinos mais sofisticados do globo. É a garantia de que, por mais longe que você vá, o zelo e a atenção de 'casa' viajam com você.
-                        </p>
-</div>
-<div class="h-64 md:h-auto bg-soft-mist relative flex items-center justify-center p-8 border-l border-outline-variant/10">
-<div class="w-48 h-48 rounded-full border-4 border-horizon-blue/10 flex items-center justify-center relative bg-white shadow-sm glow-hover transition-all duration-500">
-<!-- Conceptual Mascot placeholder -->
-<span class="material-symbols-outlined text-6xl text-primary">mobile_arrow_right</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-low dark:bg-surface-container-lowest text-secondary dark:text-secondary-fixed font-body-base text-body-base full-width bottom bg-soft-mist border-t border-outline-variant flat no shadows opacity-80 hover:opacity-100 transition-opacity w-full py-section-padding px-mobile-margin md:px-section-padding flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto mt-24">
-<div class="font-headline-lg text-headline-lg text-horizon-blue mb-6 md:mb-0">
-            Uai Sô Travel
+        <div class="logo-text-group">
+          <div class="logo-brand-script">Uai Sô ☕</div>
+          <div class="logo-brand-travel">
+            <span class="stripe-wing stripe-yellow"></span>
+            <span class="stripe-wing stripe-red"></span>
+            TRAVEL
+            <span class="stripe-wing stripe-red"></span>
+            <span class="stripe-wing stripe-yellow"></span>
+          </div>
         </div>
-<div class="flex flex-col md:flex-row gap-6 items-center mb-6 md:mb-0">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps uppercase" href="#">Termos de Uso</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps uppercase" href="#">Política de Privacidade</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps uppercase" href="#">WhatsApp BR</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps uppercase" href="#">WhatsApp PT</a>
-</div>
-<div class="text-on-surface-variant text-sm">
-            © 2024 Uai Sô Travel. Todos os direitos reservados.
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="quem-somos.html" class="nav-link active">Quem Somos</a>
+        <a href="experiencias.html" class="nav-link">Experiências</a>
+        <a href="destinos.html" class="nav-link">Destinos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contato.html" class="btn-header">
+          <span>Personalizar Viagem</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- HERO QUEM SOMOS -->
+    <section class="section" style="padding: 70px 0 40px; text-align: center; background: var(--bg-surface-low);">
+      <div class="container reveal-item">
+        <span class="section-tag label-caps">[ NOSSA HISTÓRIA & PROPÓSITO ]</span>
+        <h1 class="section-title">Do Coração de Minas para o Mundo</h1>
+        <p class="section-subtitle" style="max-width: 720px; margin: 0 auto;">
+          Conheça a essência da <strong>Uai Sô Travel</strong>: a união entre a autoridade internacional de negócios e o calor humano que só Minas Gerais tem.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOBRE A FUNDADORA -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="bento-founder-grid reveal-item">
+          
+          <div class="founder-image-wrapper">
+            <img src="./assets/founder_liliam.png" alt="Dra. Liliam Silva" class="founder-img">
+            <div class="founder-card-badge">
+              <span class="founder-badge-name">Dra. Liliam Silva</span>
+              <span class="founder-badge-role">Fundadora & Diretora Internacional</span>
+            </div>
+          </div>
+
+          <div class="founder-story-content">
+            <span class="label-caps" style="color: var(--horizon-blue);">[ A TRAJETÓRIA ]</span>
+            <h2 style="font-size: 2.2rem; color: var(--text-main); line-height: 1.25;">
+              Precisão Executiva, Aconchego Mineiro
+            </h2>
+            
+            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">
+              A <strong>Uai Sô Travel</strong> nasceu da visão da <strong>Dra. Liliam Silva</strong>, profissional com vasta bagagem no mercado corporativo e passagens por grandes centros globais como <strong>Lisboa, Dubai e Qatar</strong>.
+            </p>
+
+            <div class="quote-box">
+              "Combinamos a precisão e a segurança do mercado corporativo internacional com o carinho do cafezinho mineiro."
+            </div>
+
+            <p style="color: var(--text-muted); font-size: 1.02rem; line-height: 1.7;">
+              Ao vivenciar viagens ao redor do globo, ela percebeu que o verdadeiro luxo não está na frieza de processos automatizados, mas sim na <strong>escuta atenta, no cuidado com cada detalhe e na sensação de se sentir em casa em qualquer lugar do mundo</strong>.
+            </p>
+          </div>
+
         </div>
-</footer>
-</body></html>
+
+        <!-- CARD DO GALINHO E O CAFÉ MINEIRO -->
+        <div class="mascot-story-card reveal-item">
+          <div>
+            <span class="label-caps" style="color: var(--primary-ochre); margin-bottom: 12px;">[ O SÍMBOLO DA CASA ]</span>
+            <h3 style="font-size: 2rem; margin-bottom: 16px;">A Lenda do Galinho & O Café Mineiro</h3>
+            <p style="color: var(--text-muted); margin-bottom: 16px; font-size: 1.05rem; line-height: 1.7;">
+              Nosso mascote une o despertar para novas jornadas ao <strong>carinho do café especial colhido nas montanhas de Minas Gerais</strong> e às asas que levam nossos clientes aos destinos mais exclusivos do planeta.
+            </p>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6;">
+              É o símbolo de que você pode desfrutar dos hotéis mais refinados e dos roteiros mais sofisticados com a leveza e a alegria de quem viaja entre amigos.
+            </p>
+          </div>
+          <div style="text-align: center;">
+            <img src="./assets/mascot_galinho.png" alt="Mascote Galinho Uai Sô Travel" class="mascot-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NOSSOS PILARES DE VALOR -->
+    <section class="section" style="background: var(--bg-surface-low);">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-tag label-caps">[ NOSSOS PILARES ]</span>
+          <h2 class="section-title">O Jeito Uai Sô de Cuidar de Você</h2>
+          <p class="section-subtitle">Três compromissos que tornam a sua experiência única.</p>
+        </div>
+
+        <div class="hero-features-grid">
+          
+          <div class="feature-pill-card reveal-item">
+            <div class="feature-icon-circle">🎯</div>
+            <h3 class="feature-title">Escuta Genuína</h3>
+            <p class="feature-desc">Cada viagem começa com uma conversa agradável para entender seus gostos, ritmo e sonhos de verdade.</p>
+          </div>
+
+          <div class="feature-pill-card reveal-item">
+            <div class="feature-icon-circle">🌍</div>
+            <h3 class="feature-title">Conexão Brasil & Europa</h3>
+            <p class="feature-desc">Bases ativas no Brasil e em Portugal, garantindo assistência rápida e em tempo real em qualquer fuso horário.</p>
+          </div>
+
+          <div class="feature-pill-card reveal-item">
+            <div class="feature-icon-circle">💎</div>
+            <h3 class="feature-title">Curadoria Sem Amarras</h3>
+            <p class="feature-desc">Indicamos apenas hotéis, companhias e experiências que foram pessoalmente avaliados e aprovados.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BANNER DE CONTATO -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-cta-solar reveal-item">
+          <span class="label-caps" style="color: var(--primary-ochre); margin-bottom: 14px;">[ PRONTO PARA EMBARCAR? ]</span>
+          <h2 class="contact-cta-title">Venha tomar um café virtual e planejar sua viagem!</h2>
+          <div class="contact-cta-btns">
+            <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Gostaria%20de%20planejar%20minha%20viagem%20com%20a%20Uai%20S%C3%B4%20Travel." target="_blank" rel="noopener" class="btn-primary">
+              <span>Conversar com a Dra. Liliam & Equipe</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 8h14M8 1l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-clean">
+    <div class="container">
+      <div class="footer-inner-row">
+        <div class="footer-brand-info">
+          <div class="logo">
+            <div class="logo-sun-icon" style="width: 36px; height: 36px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="6" fill="#FFFFFF"/>
+                <path d="M12 2V4M12 20V22M4 12H2M22 12H20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <div class="logo-brand-script" style="font-size: 1.4rem;">Uai Sô ☕</div>
+              <div class="logo-brand-travel">TRAVEL</div>
+            </div>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            © 2026 Uai Sô Travel. Excelência Global, Alma Mineira.
+          </p>
+        </div>
+
+        <div class="footer-links-row">
+          <a href="index.html">Início</a>
+          <a href="quem-somos.html">Quem Somos</a>
+          <a href="experiencias.html">Experiências</a>
+          <a href="destinos.html">Destinos</a>
+          <a href="contato.html">Contato</a>
+          <a href="https://wa.me/5535991234567" target="_blank" rel="noopener">WhatsApp BR</a>
+          <a href="https://wa.me/351999999999" target="_blank" rel="noopener">WhatsApp PT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5535991234567" target="_blank" rel="noopener" class="float-wa-btn">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span>Fale Conosco</span>
+  </a>
+
+</body>
+</html>
