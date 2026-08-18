@@ -1,566 +1,440 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uai Sô Travel | Do Coração de Minas para o Mundo</title>
-  <meta name="description" content="Uai Sô Travel — Curadoria internacional de viagens sob medida com o acolhimento e carinho de Minas Gerais. Brasil, Portugal, Dubai e os melhores destinos do mundo.">
-  <meta name="theme-color" content="#FFD700">
-  <link rel="icon" type="image/png" href="./assets/mascot_galinho.png">
 
-  <!-- Google Fonts: Bricolage Grotesque (Alegre e Expressiva) + Plus Jakarta Sans + Caveat + Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Inter:wght@600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
-
-  <script type="module" crossorigin src="./assets/index-CpA1Gef-.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-C-fmeyum.css">
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Uai Sô Travel - Sua Próxima Viagem</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Inter:wght@400;700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "primary": "#705d00",
+                "surface-variant": "#eae2cf",
+                "outline-variant": "#d0c6ab",
+                "surface-bright": "#fff9ef",
+                "on-secondary-fixed-variant": "#1f477b",
+                "tertiary-container": "#00f1ff",
+                "on-tertiary-container": "#006a70",
+                "surface-container-low": "#fbf3e0",
+                "on-primary": "#ffffff",
+                "tertiary-fixed-dim": "#00dbe8",
+                "on-primary-fixed-variant": "#544600",
+                "secondary-fixed-dim": "#a7c8ff",
+                "surface-container-high": "#f0e7d5",
+                "on-tertiary": "#ffffff",
+                "executive-blue": "#003366",
+                "warm-shadow": "#1F1B10",
+                "sunflower": "#FFD700",
+                "inverse-primary": "#e9c400",
+                "on-secondary-fixed": "#001b3c",
+                "inverse-surface": "#343024",
+                "secondary-container": "#9fc2fe",
+                "surface-container-highest": "#eae2cf",
+                "on-tertiary-fixed-variant": "#004f54",
+                "tertiary-fixed": "#79f5ff",
+                "on-primary-container": "#705e00",
+                "on-tertiary-fixed": "#002022",
+                "on-surface-variant": "#4d4732",
+                "outline": "#7e775f",
+                "error": "#ba1a1a",
+                "primary-fixed-dim": "#e9c400",
+                "surface-tint": "#705d00",
+                "prestige-gold": "#D4AF37",
+                "on-secondary-container": "#294f83",
+                "on-secondary": "#ffffff",
+                "surface-container": "#f6edda",
+                "secondary-fixed": "#d5e3ff",
+                "surface-container-lowest": "#ffffff",
+                "inverse-on-surface": "#f9f0dd",
+                "error-container": "#ffdad6",
+                "primary-fixed": "#ffe16d",
+                "surface-dim": "#e1d9c7",
+                "on-error-container": "#93000a",
+                "surface": "#fff9ef",
+                "primary-container": "#ffd700",
+                "horizon-blue": "#005B96",
+                "tertiary": "#00696f",
+                "on-error": "#ffffff",
+                "secondary": "#3a5f94",
+                "on-surface": "#1f1b10",
+                "background": "#fff9ef",
+                "on-background": "#1f1b10",
+                "on-primary-fixed": "#221b00"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "section-padding": "120px",
+                "container-max": "1280px",
+                "unit": "8px"
+        },
+        "fontFamily": {
+                "quote-accent": [
+                        "Plus Jakarta Sans"
+                ],
+                "label-caps": [
+                        "Inter"
+                ],
+                "display-hero": [
+                        "Bricolage Grotesque"
+                ],
+                "headline-lg": [
+                        "Bricolage Grotesque"
+                ],
+                "subheading": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg-mobile": [
+                        "Bricolage Grotesque"
+                ],
+                "body-base": [
+                        "Plus Jakarta Sans"
+                ]
+        },
+        "fontSize": {
+                "quote-accent": [
+                        "24px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "300"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.15em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-hero": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "40px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "subheading": [
+                        "20px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-base": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
 </head>
-<body>
-
-  <!-- ============================================================
-       1. HEADER / BARRA DE NAVEGAÇÃO
-       ============================================================ -->
-  <header class="header" id="header">
-    <div class="container header-inner">
-      
-      <a href="#home" class="logo">
-        <div class="logo-sun-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="12" r="6" fill="#FFFFFF"/>
-            <path d="M12 2V4M12 20V22M4 12H2M22 12H20M6.3 6.3L4.9 4.9M19.1 19.1L17.7 17.7M6.3 17.7L4.9 19.1M19.1 4.9L17.7 6.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="logo-text-group">
-          <div class="logo-brand-script">Uai Sô ☕</div>
-          <div class="logo-brand-travel">
-            <span class="stripe-wing stripe-yellow"></span>
-            <span class="stripe-wing stripe-red"></span>
-            TRAVEL
-            <span class="stripe-wing stripe-red"></span>
-            <span class="stripe-wing stripe-yellow"></span>
-          </div>
-        </div>
-      </a>
-
-      <nav class="nav-menu" id="navMenu">
-        <a href="#home" class="nav-link">Início</a>
-        <a href="#quem-somos" class="nav-link">Quem Somos</a>
-        <a href="#experiencias" class="nav-link">Experiências</a>
-        <a href="#destinos" class="nav-link">Destinos</a>
-        <a href="#como-funciona" class="nav-link">Como Funciona</a>
-        <a href="#contato" class="nav-link">Contato</a>
-      </nav>
-
-      <div class="header-actions">
-        <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Uai%20S%C3%B4%20Travel%20e%20gostaria%20de%20personalizar%20minha%20viagem." target="_blank" rel="noopener" class="btn-header">
-          <span>Personalizar Viagem</span>
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-        </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu">☰</button>
-      </div>
-
-    </div>
-  </header>
-
-  <main>
-
-    <!-- ============================================================
-         2. HERO SECTION — LUZ, CALOR SOLAR & ACONCHEGO
-         ============================================================ -->
-    <section class="hero" id="home">
-      <div class="hero-bg-visual"></div>
-      <div class="hero-sun-glow"></div>
-
-      <div class="container">
-        <div class="hero-content reveal-item">
-          
-          <div class="hero-tag-pill">
-            <span class="hero-tag-dot"></span>
-            <span class="label-caps" style="color: var(--primary-ochre);">AGÊNCIA DE VIAGENS ESPECIAL · BR & PT</span>
-          </div>
-
-          <h1 class="hero-title">
-            Sua próxima <br>
-            <span class="highlight-gold font-script" style="font-size: 1.15em;">viagem</span> <br>
-            começa aqui.
-          </h1>
-
-          <p class="hero-subtext">
-            ✦ Viagens personalizadas. <em style="font-family: 'Caveat', cursive; font-size: 1.3em; color: var(--horizon-blue);">Momentos inesquecíveis.</em> ✦
+<body class="bg-surface-bright text-on-surface font-body-base antialiased">
+<!-- TopNavBar Component -->
+<header class="bg-transparent backdrop-blur-md border-b border-outline-variant/30 docked full-width top-0 sticky z-50 transition-colors duration-300" id="topNav">
+<div class="flex justify-between items-center w-full px-mobile-margin md:px-gutter max-w-container-max mx-auto py-4">
+<a class="flex items-center scale-95 active:scale-90 transition-transform" href="index.html">
+<img alt="Uai Sô Travel" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1fjedgigk7A36X3JH1O6-HQp397F26QUnDFMDGiry25mPXk1UlnciJheulmgiXKT_zJFU8wQeAOlWDFZw2C2GWMS4N3N_KgnYy-lQ8lO6PiSe7B3h4voeM29E47mfMM5F1VSLKGr9CIeXiN2p-GGQ-IPlO-VzZB1YFb_25q6xv4w5R1fCUfXovG7UkZnh_XWpOQw1HmCmUGjYY5i4OlYiDILS9mHd2503OKGOvjf8uwhEJz7jTGxgCiG9e-OsqDV5kiU"/>
+</a>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-base text-body-base hover:bg-primary/10 transition-all duration-300" href="quem-somos.html">Quem Somos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-base text-body-base hover:bg-primary/10 transition-all duration-300" href="experiencias.html">Experiências</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-base text-body-base hover:bg-primary/10 transition-all duration-300" href="destinos.html">Destinos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-base text-body-base hover:bg-primary/10 transition-all duration-300" href="contato.html">Contato</a>
+<a class="bg-executive-blue text-white px-6 py-2 rounded-xl font-subheading text-subheading hover:shadow-[0_0_15px_rgba(0,51,102,0.3)] transition-all scale-95 active:scale-90" href="https://wa.me/5535991234567">Personalizar Viagem</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<script>
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('topNav');
+      if (window.scrollY > 50) {
+        nav.classList.replace('bg-transparent', 'bg-white/90');
+      } else {
+        nav.classList.replace('bg-white/90', 'bg-transparent');
+      }
+    });
+  </script>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A breathtaking landscape of Minas Gerais, Brazil, bathed in warm, golden morning light. The scene features lush green rolling hills, a winding river reflecting the sunrise, and dramatic rocky canyons. The lighting is high-key and optimistic, embodying a luminous global travel aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLsqR5C15_zfHfJFEELkifJZ0LC9BwkIFNsnpSVAm0CiqUgYwtIjYRMBIDmX-ruaeu7w3UOV9NcIWOKRbOkjLb-l6HfpQMwLfXgNRs6ksVc30_inL8th_BsaQSApYCefcnKBycMpeimiYZcMt9wspklPkc10EEU6MnuP_SlVKk7lTfPmwr1nCPg-Ltjnb4JdtqzsGh-fYLfxWgDG6MeeZ4mr2pJTQM4Xpr5TG2KDxe74TYiL59mjjEhJVVH9')">
+<div class="absolute inset-0 bg-white/20 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 text-center px-mobile-margin md:px-gutter max-w-container-max mx-auto">
+<span class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase mb-4 block">AGÊNCIA DE VIAGENS ESPECIAL</span>
+<h1 class="font-display-hero text-headline-lg-mobile md:text-display-hero text-on-surface mb-6 drop-shadow-md">
+          Sua próxima <br/> viagem <br/> começa aqui.
+        </h1>
+<p class="font-quote-accent text-quote-accent text-on-surface-variant mb-8 max-w-2xl mx-auto drop-shadow-sm">
+          ✦ Viagens personalizadas. <span class="italic">Momentos inesquecíveis.</span> ✦
+        </p>
+<a class="inline-flex items-center gap-2 bg-executive-blue text-white px-8 py-4 rounded-xl font-subheading text-subheading hover:shadow-[0_0_20px_rgba(0,51,102,0.4)] transition-all transform hover:-translate-y-1" href="https://wa.me/5535991234567">
+          Fale com a gente e personalize!
+          <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Features -->
+<section class="py-section-padding bg-surface-bright border-b border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-gutter grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="p-6 bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:shadow-[0_0_15px_rgba(255,215,0,0.15)] transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="tune">tune</span>
+<h3 class="font-subheading text-subheading text-on-surface">100% Personalizado</h3>
+</div>
+<div class="p-6 bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:shadow-[0_0_15px_rgba(255,215,0,0.15)] transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="headset_mic">headset_mic</span>
+<h3 class="font-subheading text-subheading text-on-surface">Suporte Biconectado</h3>
+<p class="text-on-surface-variant text-sm mt-2">BR &amp; PT</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:shadow-[0_0_15px_rgba(255,215,0,0.15)] transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-icon="star">star</span>
+<h3 class="font-subheading text-subheading text-on-surface">Curadoria Exclusiva</h3>
+<p class="text-on-surface-variant text-sm mt-2">VIP</p>
+</div>
+</div>
+</section>
+<!-- Founder Section -->
+<section class="py-section-padding bg-surface-container-low" id="quem-somos">
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-gutter grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="relative rounded-[24px] overflow-hidden group">
+<img alt="Dra. Liliam Silva" class="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLvnlsugQgkpA0oHlWG-AXXA-4prkO6Tw4QaY2yVIYgj3_ycUCK2Rlu9XwOSEcOx6fkyUP2sNe0SYVkR68XXuJRp3rqszBhcqBCmgSQL7jcZJscbw8J-4UAu3MLnM9G0SDb-LeE-axh9fHy1SeBYwlJzWpcrdLemOcLzWo3V8EBa2Xm4GKgKNPfYrVXSbUZCsPd_3tB--3EJd4rHscSx_gr_Bo9P4L5DDPRzVo7IN2HQt111xmL93B0sAgRM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 to-transparent flex items-end p-8">
+<div>
+<h3 class="font-subheading text-subheading text-white">Dra. Liliam Silva</h3>
+<p class="text-white/80 font-label-caps text-label-caps tracking-widest mt-2">Fundadora &amp; Diretora Internacional</p>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase mb-4 block">[ SOBRE A FUNDADORA ]</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">
+            Não apenas viagens — memórias desenhadas com prestígio e alma.
+          </h2>
+<blockquote class="border-l-4 border-primary pl-6 py-2 my-8">
+<p class="font-quote-accent text-quote-accent text-on-surface italic">
+              "Combinamos a precisão e a segurança do mercado corporativo internacional com o carinho do cafezinho mineiro."
+            </p>
+</blockquote>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+            Com uma carreira consolidada no exigente cenário das consultorias empresariais, nasceu a Uai Sô Travel: uma agência internacional com alma acolhedora de Minas Gerais.
           </p>
-
-          <div class="hero-btn-row">
-            <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Uai%20S%C3%B4%20Travel%20para%20planejar%20minha%20viagem." target="_blank" rel="noopener" class="btn-primary">
-              <span>Fale com a gente e personalize!</span>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 8h14M8 1l7 7-7 7"/></svg>
-            </a>
-            <a href="#destinos" class="btn-ghost">
-              <span>Ver Destinos Inspiradores</span>
-            </a>
-          </div>
-
-          <!-- 3 Pilares em Cards Alegres -->
-          <div class="hero-features-grid">
-            <div class="feature-pill-card">
-              <div class="feature-icon-circle">✨</div>
-              <h3 class="feature-title">100% Personalizado</h3>
-              <p class="feature-desc">Roteiros desenhados exclusivamente para o seu perfil e ritmo.</p>
-            </div>
-
-            <div class="feature-pill-card">
-              <div class="feature-icon-circle">🤝</div>
-              <h3 class="feature-title">Suporte Biconectado</h3>
-              <p class="feature-desc">Atendimento contínuo e acolhedor no Brasil e em Portugal.</p>
-            </div>
-
-            <div class="feature-pill-card">
-              <div class="feature-icon-circle">⭐</div>
-              <h3 class="feature-title">Curadoria VIP</h3>
-              <p class="feature-desc">Parcerias com hotéis e serviços de alto padrão no mundo todo.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ============================================================
-         3. QUEM SOMOS & ESSÊNCIA MINEIRA
-         ============================================================ -->
-    <section class="section" id="quem-somos">
-      <div class="container">
-        
-        <div class="section-header reveal-item">
-          <span class="section-tag label-caps">[ NOSSA ESSÊNCIA ]</span>
-          <h2 class="section-title">Do Coração de Minas para o Mundo</h2>
-          <p class="section-subtitle">A precisão da curadoria internacional, envelopada com o calor de um bom anfitrião.</p>
-        </div>
-
-        <!-- Bento Grid da Fundadora -->
-        <div class="bento-founder-grid reveal-item">
-          
-          <div class="founder-image-wrapper">
-            <img src="./assets/founder_liliam.png" alt="Dra. Liliam Silva" class="founder-img">
-            <div class="founder-card-badge">
-              <span class="founder-badge-name">Dra. Liliam Silva</span>
-              <span class="founder-badge-role">Fundadora & Curadora Internacional</span>
-            </div>
-          </div>
-
-          <div class="founder-story-content">
-            <span class="label-caps" style="color: var(--horizon-blue);">[ A TRAJETÓRIA ]</span>
-            <h3 style="font-size: 2rem; color: var(--text-main);">Precisão Executiva, Carinho Mineiro</h3>
-            
-            <p style="color: var(--text-muted);">
-              A <strong>Uai Sô Travel</strong> nasce da vivência global e da alma mineira da <strong>Dra. Liliam Silva</strong>. Com uma trajetória construída em consultorias corporativas e vivência internacional em metrópoles como <strong>Lisboa, Dubai e Qatar</strong>, ela transformou o olhar executivo em curadoria de viagens de alto padrão.
-            </p>
-
-            <div class="quote-box">
-              "Acreditamos que a logística de uma viagem deve operar com a precisão de um relógio suíço, enquanto o atendimento deve ter o aconchego de um café fresco na varanda de casa."
-            </div>
-
-            <p style="color: var(--text-muted); font-size: 0.95rem;">
-              Combinamos a segurança de parceiros globais com um acompanhamento próximo e dedicado antes, durante e após o seu embarque.
-            </p>
-          </div>
-
-        </div>
-
-        <!-- Card da Lenda do Galinho -->
-        <div class="mascot-story-card reveal-item">
-          <div>
-            <span class="label-caps" style="color: var(--primary-ochre); margin-bottom: 12px;">[ O SÍMBOLO DA CASA ]</span>
-            <h3 style="font-size: 1.85rem; margin-bottom: 14px;">A Lenda do Galinho & O Café Mineiro</h3>
-            <p style="color: var(--text-muted); margin-bottom: 16px;">
-              Nosso mascote une o despertar para o mundo (o sol nascendo e o galo cantando de manhã) ao <strong>carinho do café especial das montanhas de Minas Gerais</strong> e à liberdade das rotas aéreas internacionais.
-            </p>
-            <p style="color: var(--text-muted); font-size: 0.95rem;">
-              É o lembrete diário de que você pode explorar os recantos mais sofisticados do planeta sem abrir mão da simplicidade e do sorriso aberto.
-            </p>
-          </div>
-          <div style="text-align: center;">
-            <img src="./assets/mascot_galinho.png" alt="Mascote Galinho Uai Sô Travel" class="mascot-img">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ============================================================
-         4. EXPERIÊNCIAS VIP — CELEBRAÇÕES E MOMENTOS INESQUECÍVEIS
-         ============================================================ -->
-    <section class="section" id="experiencias" style="background: var(--bg-surface-low);">
-      <div class="container">
-        
-        <div class="section-header reveal-item">
-          <span class="section-tag label-caps" style="background: #FFFFFF;">[ COLEÇÃO DE CELEBRAÇÕES ]</span>
-          <h2 class="section-title">Experiências que Marcam a Vida</h2>
-          <p class="section-subtitle">Momentos singulares desenhados para celebrar grandes conquistas com quem você ama.</p>
-        </div>
-
-        <!-- Bento Grid de Experiências -->
-        <div class="experiences-bento">
-          
-          <!-- 1. Lua de Mel (Grande) -->
-          <div class="exp-card exp-card-large reveal-item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Maldives_-_Bungalows.jpg/1920px-Maldives_-_Bungalows.jpg" alt="Lua de Mel nas Maldivas" class="exp-bg-image">
-            <div class="exp-overlay"></div>
-            <div class="exp-content-box">
-              <span class="exp-tag label-caps">[ ROMANCE ABSOLUTO ]</span>
-              <h3 class="exp-title">Lua de Mel nas Maldivas & Oásis de Luxo</h3>
-              <p class="exp-desc">Bangalôs sobre águas cristalinas, jantares à luz de velas na areia branca e momentos de pura conexão a dois.</p>
-              <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Gostaria%20de%20planejar%20minha%20Lua%20de%20Mel%20com%20a%20Uai%20S%C3%B4%20Travel." target="_blank" rel="noopener" class="exp-btn-link">
-                <span>Personalizar Lua de Mel</span> →
-              </a>
-            </div>
-          </div>
-
-          <!-- 2. Formatura (Médio) -->
-          <div class="exp-card exp-card-medium reveal-item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cancun_aerial_view.jpg/1920px-Cancun_aerial_view.jpg" alt="Formatura em Cancun" class="exp-bg-image">
-            <div class="exp-overlay"></div>
-            <div class="exp-content-box">
-              <span class="exp-tag label-caps" style="color: var(--primary-ochre);">[ ENERGIA PREMIUM ]</span>
-              <h3 class="exp-title">Viagens de Formatura</h3>
-              <p class="exp-desc">Resorts all-inclusive em Cancun e passeios de iate exclusivos para celebrar sua grande conquista.</p>
-              <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Gostaria%20de%20planejar%20uma%20Viagem%20de%20Formatura." target="_blank" rel="noopener" class="exp-btn-link">
-                <span>Consultar Roteiro</span> →
-              </a>
-            </div>
-          </div>
-
-          <!-- 3. Bodas de Casamento (Full Width) -->
-          <div class="exp-card exp-card-full reveal-item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Val_d%27Orcia_landscape.jpg/1920px-Val_d%27Orcia_landscape.jpg" alt="Bodas na Toscana" class="exp-bg-image">
-            <div class="exp-overlay"></div>
-            <div class="exp-content-box" style="max-width: 600px;">
-              <span class="exp-tag label-caps">[ CELEBRAÇÕES ]</span>
-              <h3 class="exp-title">Bodas & Aniversários de Casamento na Toscana</h3>
-              <p class="exp-desc">Renove seus votos entre as colinas douradas da Itália. Degustação de vinhos em vilarejos históricos e jantares ao pôr do sol.</p>
-              <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Gostaria%20de%20planejar%20minhas%20Bodas%20na%20Toscana." target="_blank" rel="noopener" class="exp-btn-link">
-                <span>Personalizar Bodas</span> →
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ============================================================
-         5. DESTINOS QUE INSPIRAM (COM FILTROS INTERATIVOS)
-         ============================================================ -->
-    <section class="section" id="destinos">
-      <div class="container">
-        
-        <div class="section-header reveal-item">
-          <span class="section-tag label-caps">[ COLEÇÃO EXCLUSIVA ]</span>
-          <h2 class="section-title">Destinos que Inspiram</h2>
-          <p class="section-subtitle">Descubra roteiros desenhados à mão onde o carinho mineiro encontra a excelência global.</p>
-        </div>
-
-        <!-- Filtros Interativos em Pílulas -->
-        <div class="destinations-filter-row reveal-item">
-          <button class="filter-btn active" data-filter="all">Todos os Destinos</button>
-          <button class="filter-btn" data-filter="praia">Praias Paradisíacas</button>
-          <button class="filter-btn" data-filter="historia">Cidades Históricas</button>
-          <button class="filter-btn" data-filter="natureza">Natureza & Alma</button>
-          <button class="filter-btn" data-filter="luxo">Alto Luxo</button>
-        </div>
-
-        <!-- Grid de Destinos Filtráveis -->
-        <div class="destinations-grid">
-          
-          <!-- Card 1: Minas Gerais -->
-          <div class="dest-card reveal-item" data-category="natureza">
-            <div class="dest-image-box">
-              <img src="./assets/destination_minas.png" alt="Minas Gerais Brasil">
-              <span class="dest-badge-category">NATUREZA & ALMA</span>
-            </div>
-            <div class="dest-body">
-              <h3 class="dest-title">Minas Gerais, Brasil</h3>
-              <p class="dest-snippet">Canyons de Capitólio, cachoeiras cristalinas e a gastronomia afetiva inigualável.</p>
-              <div class="dest-footer-action">
-                <span style="font-weight: 700; color: var(--primary-ochre); font-size: 0.85rem;">Roteiro Exclusivo</span>
-                <a href="https://wa.me/5535991234567?text=Gostaria%20de%20roteiro%20para%20Minas%20Gerais" target="_blank" rel="noopener" class="btn-dest-cta">Consultar</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2: Portugal -->
-          <div class="dest-card reveal-item" data-category="historia">
-            <div class="dest-image-box">
-              <img src="./assets/destination_portugal.png" alt="Lisboa e Portugal">
-              <span class="dest-badge-category">HISTÓRIA & CHARME</span>
-            </div>
-            <div class="dest-body">
-              <h3 class="dest-title">Lisboa & Costa Portuguesa</h3>
-              <p class="dest-snippet">Castelos medievais, vinícolas no Douro e as falésias deslumbrantes do Algarve.</p>
-              <div class="dest-footer-action">
-                <span style="font-weight: 700; color: var(--primary-ochre); font-size: 0.85rem;">Base Europa</span>
-                <a href="https://wa.me/5535991234567?text=Gostaria%20de%20roteiro%20para%20Portugal" target="_blank" rel="noopener" class="btn-dest-cta">Consultar</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Dubai -->
-          <div class="dest-card reveal-item" data-category="luxo">
-            <div class="dest-image-box">
-              <img src="./assets/destination_dubai.png" alt="Dubai Emirados">
-              <span class="dest-badge-category">ALTO LUXO</span>
-            </div>
-            <div class="dest-body">
-              <h3 class="dest-title">Dubai & Emirados Árabes</h3>
-              <p class="dest-snippet">Arquitetura futurista, safáris no deserto dourado e hotéis 7 estrelas.</p>
-              <div class="dest-footer-action">
-                <span style="font-weight: 700; color: var(--primary-ochre); font-size: 0.85rem;">Experiência VIP</span>
-                <a href="https://wa.me/5535991234567?text=Gostaria%20de%20roteiro%20para%20Dubai" target="_blank" rel="noopener" class="btn-dest-cta">Consultar</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4: Santorini -->
-          <div class="dest-card reveal-item" data-category="praia">
-            <div class="dest-image-box">
-              <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80" alt="Santorini Grécia">
-              <span class="dest-badge-category">PRAIA & PÔR DO SOL</span>
-            </div>
-            <div class="dest-body">
-              <h3 class="dest-title">Santorini, Grécia</h3>
-              <p class="dest-snippet">Vilarejos brancos sobre o mar Egeu e um dos pores do sol mais famosos do planeta.</p>
-              <div class="dest-footer-action">
-                <span style="font-weight: 700; color: var(--primary-ochre); font-size: 0.85rem;">Ilhas Gregas</span>
-                <a href="https://wa.me/5535991234567?text=Gostaria%20de%20roteiro%20para%20Santorini" target="_blank" rel="noopener" class="btn-dest-cta">Consultar</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5: Nova York -->
-          <div class="dest-card reveal-item" data-category="luxo">
-            <div class="dest-image-box">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Statue_of_Liberty%2C_NY.jpg/800px-Statue_of_Liberty%2C_NY.jpg" alt="Nova York">
-              <span class="dest-badge-category">VIDA NOTURNA & SHOWS</span>
-            </div>
-            <div class="dest-body">
-              <h3 class="dest-title">Nova York, EUA</h3>
-              <p class="dest-snippet">Espetáculos da Broadway, compras na 5ª Avenida e a energia inconfundível de Manhattan.</p>
-              <div class="dest-footer-action">
-                <span style="font-weight: 700; color: var(--primary-ochre); font-size: 0.85rem;">Metrópoles</span>
-                <a href="https://wa.me/5535991234567?text=Gostaria%20de%20roteiro%20para%20Nova%20York" target="_blank" rel="noopener" class="btn-dest-cta">Consultar</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6: Paris -->
-          <div class="dest-card reveal-item" data-category="historia">
-            <div class="dest-image-box">
-              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80" alt="Paris França">
-              <span class="dest-badge-category">ARTE & CULTURA</span>
-            </div>
-            <div class="dest-body">
-              <h3 class="dest-title">Paris & França</h3>
-              <p class="dest-snippet">Cafés charmosos, museus emblemáticos e a elegância atemporal da Cidade Luz.</p>
-              <div class="dest-footer-action">
-                <span style="font-weight: 700; color: var(--primary-ochre); font-size: 0.85rem;">Clássicos</span>
-                <a href="https://wa.me/5535991234567?text=Gostaria%20de%20roteiro%20para%20Paris" target="_blank" rel="noopener" class="btn-dest-cta">Consultar</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ============================================================
-         6. COMO FUNCIONA (3 PASSOS SEM COMPLICAÇÃO)
-         ============================================================ -->
-    <section class="section" id="como-funciona" style="background: #FFFFFF;">
-      <div class="container">
-        
-        <div class="section-header reveal-item">
-          <span class="section-tag label-caps">[ JORNADA TRANQUILA ]</span>
-          <h2 class="section-title">Como Planejamos Sua Viagem</h2>
-          <p class="section-subtitle">Do primeiro bate-papo até a volta para casa com a mala cheia de memórias.</p>
-        </div>
-
-        <div class="steps-grid">
-          
-          <div class="step-card reveal-item">
-            <div class="step-num-badge">1</div>
-            <h3 class="step-title">Descoberta & Escuta</h3>
-            <p class="step-desc">Tomamos um cafezinho virtual para entender seu estilo de viagem, datas e quem viaja com você.</p>
-          </div>
-
-          <div class="step-card reveal-item">
-            <div class="step-num-badge">2</div>
-            <h3 class="step-title">Design do Roteiro</h3>
-            <p class="step-desc">Nossa curadoria monta a proposta sob medida: voos ideais, hotéis selecionados e passeios únicos.</p>
-          </div>
-
-          <div class="step-card reveal-item">
-            <div class="step-num-badge">3</div>
-            <h3 class="step-title">Embarque & Apoio 24h</h3>
-            <p class="step-desc">Você viaja com segurança total e um canal direto no WhatsApp para suporte contínuo em qualquer fuso.</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ============================================================
-         7. ATENDIMENTO PREMIUM & CONTATO
-         ============================================================ -->
-    <section class="section" id="contato">
-      <div class="container">
-        
-        <div class="contact-wrapper-card reveal-item">
-          
-          <div class="contact-left">
-            <span class="label-caps" style="color: var(--primary-sunflower); margin-bottom: 12px;">[ CONTATO VIP ]</span>
-            <h2>Tranquilidade Sem Fronteiras</h2>
-            <p>Converse diretamente com nossos consultores e comece a desenhar o seu próximo roteiro personalizado.</p>
-
-            <div class="contact-channels-list">
-              <a href="https://wa.me/5535991234567" target="_blank" rel="noopener" class="contact-item">
-                <span class="contact-icon">💬</span>
-                <div>
-                  <div style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.8;">Base Brasil & WhatsApp</div>
-                  <div style="font-weight: 700; font-size: 1.1rem;">(35) 9 9123-4567</div>
-                </div>
-              </a>
-
-              <a href="https://wa.me/5535991234567" target="_blank" rel="noopener" class="contact-item">
-                <span class="contact-icon">🌍</span>
-                <div>
-                  <div style="font-size: 0.75rem; text-transform: uppercase; opacity: 0.8;">Base Europa & Suporte Internacional</div>
-                  <div style="font-weight: 700; font-size: 1.1rem;">+351 91 999 9999</div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="contact-form-box">
-            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Personalize sua Viagem</h3>
-            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Preencha em menos de 1 minuto que entraremos em contato.</p>
-
-            <form id="contactForm">
-              <div class="form-group">
-                <label class="form-label">Seu Nome</label>
-                <input type="text" class="form-input" placeholder="Ex: Maria Silva" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">WhatsApp com DDD</label>
-                <input type="tel" class="form-input" placeholder="(00) 00000-0000" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Destino ou Experiência Desejada</label>
-                <select class="form-select" required>
-                  <option value="">Selecione uma opção...</option>
-                  <option value="lua-de-mel">💍 Lua de Mel (Maldivas, Polinésia, etc.)</option>
-                  <option value="formatura">🎓 Viagem de Formatura (Cancun, etc.)</option>
-                  <option value="bodas">🥂 Bodas & Celebrações (Toscana, etc.)</option>
-                  <option value="portugal">🏰 Portugal & Europa Histórica</option>
-                  <option value="dubai">✨ Dubai & Emirados Árabes</option>
-                  <option value="minas">⛰️ Minas Gerais & Ecoturismo</option>
-                  <option value="outro">✈️ Outro Destino Personalizado</option>
-                </select>
-              </div>
-
-              <button type="submit" class="btn-submit-form">Solicitar Roteiro Personalizado ✨</button>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- ============================================================
-       8. FOOTER
-       ============================================================ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        
-        <div>
-          <div class="logo" style="margin-bottom: 16px;">
-            <div class="logo-sun-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="6" fill="#FFFFFF"/>
-                <path d="M12 2V4M12 20V22M4 12H2M22 12H20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="logo-text-group">
-              <div class="logo-brand-script">Uai Sô ☕</div>
-              <div class="logo-brand-travel">TRAVEL</div>
-            </div>
-          </div>
-          <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px;">
-            Agência especializada em viagens sob medida, roteiros internacionais e momentos inesquecíveis. Do coração de Minas para o mundo.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#quem-somos">Quem Somos</a></li>
-            <li><a href="#experiencias">Experiências VIP</a></li>
-            <li><a href="#destinos">Destinos</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Experiências</h4>
-          <ul>
-            <li><a href="#experiencias">Luas de Mel</a></li>
-            <li><a href="#experiencias">Formaturas</a></li>
-            <li><a href="#experiencias">Bodas na Toscana</a></li>
-            <li><a href="#experiencias">Aniversários</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Atendimento</h4>
-          <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 10px;">Segunda a Sexta: 09h às 19h</p>
-          <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 10px;">Plantão 24h para passageiros em viagem.</p>
-          <a href="https://wa.me/5535991234567" target="_blank" rel="noopener" style="color: var(--horizon-blue); font-weight: 700; text-decoration: none;">Chamar no WhatsApp →</a>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2026 Uai Sô Travel — Todos os direitos reservados. Feito com carinho mineiro e visão global.</p>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- ============================================================
-       9. BOTÃO FLUTUANTE DE WHATSAPP (ALEGRE & VIBRANTE)
-       ============================================================ -->
-  <a href="https://wa.me/5535991234567?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Uai%20S%C3%B4%20Travel%20e%20gostaria%20de%20planejar%20minha%20viagem." target="_blank" rel="noopener" class="float-wa-btn">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-    <span>Fale Conosco</span>
-  </a>
-
-  <!-- Script Interativo -->
-
-</body>
-</html>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="flex justify-center items-center py-12 bg-surface-bright">
+<div class="h-px bg-outline-variant/30 w-32"></div>
+<span class="px-8 text-primary/50 text-2xl">✦</span>
+<div class="h-px bg-outline-variant/30 w-32"></div>
+</div>
+<!-- VIP Experiences -->
+<section class="py-section-padding bg-surface-bright" id="experiencias">
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-gutter">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase mb-4 block">[ DATAS COMEMORATIVAS ]</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Experiências VIP</h2>
+<p class="text-on-surface-variant mt-4">Roteiros selecionados com acompanhamento VIP.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group relative rounded-[24px] overflow-hidden bg-surface-container-low border border-outline-variant/20 hover:shadow-[0_0_20px_rgba(0,51,102,0.15)] transition-all duration-300">
+<div class="h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A luxurious overwater bungalow in the Maldives at sunset. The sky is painted with vibrant orange and pink hues, reflecting off the crystal-clear turquoise waters. The scene conveys high-end exclusivity, romance, and tranquility, fitting a premium VIP honeymoon experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASxdLcqiBxT2w_k9kp08EbNG2f_2UI0p7Qzol1qeVOjqWjsddTKWULy2cJgOqW0S6t69ykE_gMuY1gmuN0w0pckoDMc46Rn_4c7Ve3zZ_LX_xU7pHWx2-2Za5Iqtysh6mZ2LK1g5d67wC_xQyOVRS3N6Akkv9nX1O_IeBurtNFpQCsegv09GkWW1HgbHpu4nBEnVFjMrEoNuMuLwFIvbjeGNJfm8cS7eVYraqyXl6xbmj10ctiGvAI2w')"></div>
+<div class="p-6">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-2 block">💍 LUA DE MEL</span>
+<h3 class="font-subheading text-subheading text-on-surface mb-2">Maldivas &amp; Oásis de Luxo</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">Bangalôs sobre águas cristalinas, jantares sob as estrelas e mimos VIP.</p>
+<a class="text-executive-blue font-semibold hover:text-primary transition-colors flex items-center gap-1" href="#">Personalizar <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative rounded-[24px] overflow-hidden bg-surface-container-low border border-outline-variant/20 hover:shadow-[0_0_20px_rgba(0,51,102,0.15)] transition-all duration-300">
+<div class="h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A vibrant evening in Cancun, Mexico, showing a luxurious all-inclusive resort beachfront. The water is a deep blue, and elegant palm trees line the white sand. Subtle glowing lights from the resort create an inviting, celebratory atmosphere suitable for a premium graduation trip." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZrzWSliqHF_9a_AYyq91U-pfI_Y7NZHinEXu5I3VijD38uvPRC8e4k-fozcwjFKuabIIi0xI2zRd293a5Ct4_nDRRX6BTJdAGRcO-6tkRgYZ7-PlJtrouzWHDhENmE1CZu4NqJ8EV5WM_QRO0dzsaJuJljw2N9HY-PCPjldVrHnpXbTzyJrM7y4X2RBuTNeKJIlDyWV88HRiIBamP_e74O5xUO4jMB9NtCnX0Qi-4Ai-GdWFNNNJcgQ')"></div>
+<div class="p-6">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-2 block">🎓 FORMATURA</span>
+<h3 class="font-subheading text-subheading text-on-surface mb-2">Cancun, México</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">Resorts all-inclusive, praias deslumbrantes no Mar do Caribe.</p>
+<a class="text-executive-blue font-semibold hover:text-primary transition-colors flex items-center gap-1" href="#">Personalizar <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative rounded-[24px] overflow-hidden bg-surface-container-low border border-outline-variant/20 hover:shadow-[0_0_20px_rgba(0,51,102,0.15)] transition-all duration-300">
+<div class="h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A stunning view of the New York City skyline at dusk from a sophisticated rooftop bar. Soft, golden city lights begin to twinkle against a dramatic sky. The scene is elegant and modern, representing an exclusive birthday celebration in the capital of the world." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmNuvOHa6M7LqyIsRwsh-2NBLAGUpW0OqAX0ffbaCgZULxz2tES8y2fhiRNhXKIbHVo7AcJlHt6Jt1e9fjS9I2_Hi3cShqQ-jfboJkvWTKX1iTHmoavtYNpi3O6s_I3EMCcwrzPuUzHdxdgAMQ3TaxSF-zAOE1DfsBvXZaqjU5QiYTNJ9Gf2avbHGdi3eKls3xiIpZX_Wk9SwGqnS6m2BSNEpp84IF4A1sMjrw7II_az53UfgUIy9SgQ')"></div>
+<div class="p-6">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-2 block">🎉 ANIVERSÁRIO</span>
+<h3 class="font-subheading text-subheading text-on-surface mb-2">Nova York, EUA</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">Comemore seu dia especial em Manhattan. Shows na Broadway, jantares em rooftops.</p>
+<a class="text-executive-blue font-semibold hover:text-primary transition-colors flex items-center gap-1" href="#">Personalizar <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-padding bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-gutter">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase mb-4 block">[ NOSSOS SERVIÇOS ]</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Como cuidamos da sua viagem</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-executive-blue" data-icon="map">map</span>
+</div>
+<h4 class="font-subheading text-subheading text-on-surface mb-2">Roteiros Sob Medida</h4>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-executive-blue" data-icon="flight_takeoff">flight_takeoff</span>
+</div>
+<h4 class="font-subheading text-subheading text-on-surface mb-2">Passagens Executivas</h4>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-executive-blue" data-icon="hotel">hotel</span>
+</div>
+<h4 class="font-subheading text-subheading text-on-surface mb-2">Hotelaria de Luxo</h4>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-executive-blue" data-icon="support_agent">support_agent</span>
+</div>
+<h4 class="font-subheading text-subheading text-on-surface mb-2">Concierge 24h</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Destinos do Mês -->
+<section class="py-section-padding bg-surface-bright" id="destinos">
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-gutter">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest uppercase mb-4 block">[ DESTINOS DO MÊS ]</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Lugares que vão fazer você sonhar</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Santorini -->
+<div class="group relative h-80 rounded-[24px] overflow-hidden">
+<img alt="Santorini" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLsUnYXx5pUtYElY98iwFFp5kM81dxTSCIeM_nnZ6DfyfVKtv2B_a-ebgPyAh1veFL9gD4c5dMZ9ROTf9bN5Bv6AXGEPAmwZ-fl5UrflVIquPMkq-fYEolKuQNu54xAKMQzGkkP2c7u-DPIwXyLNz7jlge2ErEWL9ZP85BtLee4SV1tmhVCJOw9GfkFY_sF3jqzy3sFj-rIfZpvKVuDPTODgRqn_iCXCuUNEXrS6wLWXLUMfCUes7Yu_R051"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 backdrop-blur-sm bg-inverse-surface/20 border-t border-white/10">
+<span class="text-primary-fixed text-xs font-bold uppercase tracking-wider mb-1 block">🔥 Em Alta</span>
+<h3 class="font-subheading text-subheading text-white mb-2">Santorini, Grécia</h3>
+</div>
+</div>
+<!-- Dubai -->
+<div class="group relative h-80 rounded-[24px] overflow-hidden">
+<img alt="Dubai" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLvkFZ7iAxRjuLJtw_mXsuCq8zuAPDj9J9f7kv-emx9C-ICC8xCr2B2DLowfDNVq6efZBDo-j0p1Ddn3kkpsctPwbUwxbt_Q80aS4ck2hgIkwPJiawxgzljRgLYMvZESjAGGrew5S1ESgDVnX3_JJKIeN-mkeFX0_GqF0fIr46A1bQ5YsgfZPQNKzTQFE4EXmbOeaPpMk9u7_VJiXUI6WNo7VgGUaVmiw7Ukxo_aiIgCKBPIn89JFWLiaXM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 backdrop-blur-sm bg-inverse-surface/20 border-t border-white/10">
+<span class="text-primary-fixed text-xs font-bold uppercase tracking-wider mb-1 block">✨ Curadoria VIP</span>
+<h3 class="font-subheading text-subheading text-white mb-2">Dubai, Emirados</h3>
+</div>
+</div>
+<!-- Portugal -->
+<div class="group relative h-80 rounded-[24px] overflow-hidden">
+<img alt="Portugal" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLshYNStct2FX33VpY05LgjUvft_5KkkOCWBSEb-zDAdQbUi8NdrbVw0UmpD-A84PB4XZ7dDhOkj9Qa_kuILLTypRI_Sp2GQJVw92q-9cf6InUZNSlpSNUkP_f_VTa4H4PerxPGw_HaWR-1crXmuwyeNJcsjkQ5iT0p6TBPRSX_KloeZUJFPsVTGklTaw-Lfm5e780Gvpbi7iU_ua9q6gyryc1Ajc8fJiFfNWk_mSjYW0xw8ERqug1gpOWAH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 backdrop-blur-sm bg-inverse-surface/20 border-t border-white/10">
+<span class="text-primary-fixed text-xs font-bold uppercase tracking-wider mb-1 block">🌷 Clássico Europeu</span>
+<h3 class="font-subheading text-subheading text-white mb-2">Lisboa, Portugal</h3>
+</div>
+</div>
+<!-- Minas Gerais -->
+<div class="group relative h-80 rounded-[24px] overflow-hidden">
+<img alt="Minas Gerais" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLsqR5C15_zfHfJFEELkifJZ0LC9BwkIFNsnpSVAm0CiqUgYwtIjYRMBIDmX-ruaeu7w3UOV9NcIWOKRbOkjLb-l6HfpQMwLfXgNRs6ksVc30_inL8th_BsaQSApYCefcnKBycMpeimiYZcMt9wspklPkc10EEU6MnuP_SlVKk7lTfPmwr1nCPg-Ltjnb4JdtqzsGh-fYLfxWgDG6MeeZ4mr2pJTQM4Xpr5TG2KDxe74TYiL59mjjEhJVVH9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 backdrop-blur-sm bg-inverse-surface/20 border-t border-white/10">
+<span class="text-primary-fixed text-xs font-bold uppercase tracking-wider mb-1 block">🌿 Natureza</span>
+<h3 class="font-subheading text-subheading text-white mb-2">Minas Gerais, Brasil</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA -->
+<section class="py-section-padding bg-surface-container-low relative overflow-hidden" id="contato">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
+<div class="max-w-container-max mx-auto px-mobile-margin md:px-gutter text-center">
+<h2 class="font-display-hero text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">Vamos planejar a sua próxima grande história?</h2>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<a class="flex items-center justify-center gap-2 bg-white border-2 border-executive-blue text-executive-blue px-8 py-4 rounded-xl font-subheading text-subheading hover:bg-executive-blue/5 transition-all w-full md:w-auto" href="https://wa.me/5535991234567">
+                    🇧🇷 WhatsApp Brasil
+                </a>
+<a class="flex items-center justify-center gap-2 bg-white border-2 border-executive-blue text-executive-blue px-8 py-4 rounded-xl font-subheading text-subheading hover:bg-executive-blue/5 transition-all w-full md:w-auto" href="https://wa.me/351999999999">
+                    🇵🇹 WhatsApp Europa
+                </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/50 full-width grid grid-cols-1 md:grid-cols-4 gap-gutter px-mobile-margin md:px-gutter py-section-padding max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<img alt="Uai Sô Travel" class="h-10 w-auto object-contain mb-4 opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5702KNh-NlgsbH4boUVLlAAM-y4NIcdlTu6r8AX4qpBhWVL_fsDUZToAir78TG72NQZxo8r9cx6e6wyDE7sUZMwyZ3npomCg4AIYKS-P-TP6vgMteyFItOQpmGfozvVBniTRkN-o0eaUGQxba19XEkdOujksl3PuZeOenqtDE_ytzMj26A0275VSyILGneNt-6idnBZH3__oPiYbMnJx3a_QOWdVPikLom1IirYeElXBoZzGcPnCI6r0Y8ZQh565MB5A"/>
+<p class="font-body-base text-body-base text-on-surface-variant">© 2024 Uai Sô Travel. Excelência Global, Alma Mineira.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-col md:flex-row justify-end gap-6 md:gap-12 items-start md:items-center">
+<a class="font-body-base text-body-base text-on-surface-variant hover:text-executive-blue underline transition-all opacity-80 hover:opacity-100" href="#">Termos de Uso</a>
+<a class="font-body-base text-body-base text-on-surface-variant hover:text-executive-blue underline transition-all opacity-80 hover:opacity-100" href="#">Política de Privacidade</a>
+<a class="font-body-base text-body-base text-on-surface-variant hover:text-executive-blue underline transition-all opacity-80 hover:opacity-100" href="#">WhatsApp BR</a>
+<a class="font-body-base text-body-base text-on-surface-variant hover:text-executive-blue underline transition-all opacity-80 hover:opacity-100" href="#">WhatsApp PT</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato - Uai Sô Travel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#79f5ff",
+                        "tertiary-fixed-dim": "#00dbe8",
+                        "on-secondary-fixed-variant": "#004d62",
+                        "primary-fixed-dim": "#e9c400",
+                        "horizon-blue": "#005B96",
+                        "soft-mist": "#F8FAFC",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#221b00",
+                        "primary-fixed": "#ffe16d",
+                        "surface-container-high": "#f0e7d5",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#004f54",
+                        "on-secondary": "#ffffff",
+                        "warm-shadow": "#2D2D2D",
+                        "on-surface": "#1f1b10",
+                        "outline": "#7e775f",
+                        "on-background": "#1f1b10",
+                        "surface-container-low": "#fbf3e0",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#4d4732",
+                        "surface-bright": "#fff9ef",
+                        "prestige-gold": "#D4AF37",
+                        "on-primary": "#ffffff",
+                        "background": "#fff9ef",
+                        "on-primary-container": "#705e00",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#e1d9c7",
+                        "primary": "#705d00",
+                        "on-secondary-container": "#09657f",
+                        "on-primary-fixed-variant": "#544600",
+                        "surface-tint": "#705d00",
+                        "surface": "#fff9ef",
+                        "secondary-fixed": "#baeaff",
+                        "tertiary-container": "#00f1ff",
+                        "on-tertiary-container": "#006a70",
+                        "inverse-surface": "#343024",
+                        "on-tertiary-fixed": "#002022",
+                        "surface-variant": "#eae2cf",
+                        "on-secondary-fixed": "#001f29",
+                        "inverse-on-surface": "#f9f0dd",
+                        "luminous-white": "#FFFFFF",
+                        "primary-container": "#ffd700",
+                        "surface-container": "#f6edda",
+                        "outline-variant": "#d0c6ab",
+                        "tertiary": "#00696f",
+                        "secondary": "#0c6780",
+                        "secondary-container": "#9ae1ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#eae2cf",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#e9c400",
+                        "secondary-fixed-dim": "#89d0ed"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "section-padding": "120px",
+                        "mobile-margin": "20px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "quote-accent": ["Montserrat"],
+                        "display-hero": ["Montserrat"],
+                        "label-caps": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "subheading": ["Montserrat"],
+                        "body-base": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "quote-accent": ["24px", { "lineHeight": "1.4", "fontWeight": "300" }],
+                        "display-hero": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "subheading": ["20px", { "lineHeight": "1.5", "fontWeight": "500" }],
+                        "body-base": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 8px 30px rgba(0, 91, 150, 0.1);
+            transform: translateY(-4px);
+        }
+        .btn-primary {
+            background-color: theme('colors.horizon-blue');
+            color: #ffffff;
+            border-radius: 16px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 8px 25px rgba(0, 91, 150, 0.3);
+            transform: translateY(-2px);
+            background-color: #004a7a;
+        }
+        
+        /* Scroll Reveal Utility */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-mobile-margin py-unit md:px-section-padding max-w-container-max mx-auto bg-surface/90 backdrop-blur-lg">
+<a class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-horizon-blue" href="index.html">Uai Sô Travel</a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface-variant hover:text-horizon-blue transition-colors duration-300 font-label-caps text-label-caps" href="quem-somos.html">Quem Somos</a>
+<a class="text-on-surface-variant hover:text-horizon-blue transition-colors duration-300 font-label-caps text-label-caps" href="experiencias.html">Experiências</a>
+<a class="text-on-surface-variant hover:text-horizon-blue transition-colors duration-300 font-label-caps text-label-caps" href="destinos.html">Destinos</a>
+<a class="text-horizon-blue font-bold border-b-2 border-horizon-blue pb-1 font-label-caps text-label-caps" href="contato.html">Contato</a>
+</div>
+<button class="hidden md:block btn-primary px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest">Personalizar Viagem</button>
+<button class="md:hidden text-horizon-blue">
+<span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+</button>
+</nav>
+<main class="flex-grow pt-[140px] pb-section-padding px-mobile-margin md:px-[48px] lg:px-0 max-w-container-max mx-auto w-full">
+<!-- Hero Section -->
+<section class="mb-24 text-center reveal">
+<h1 class="font-display-hero text-headline-lg-mobile md:text-display-hero text-horizon-blue mb-6">Sua Próxima Grande História Começa com um Primeiro Passo.</h1>
+<p class="font-quote-accent text-subheading md:text-quote-accent text-on-surface-variant max-w-3xl mx-auto">
+                Desenhamos jornadas exclusivas e curadorias sob medida para viajantes que buscam o extraordinário, sempre com o cuidado e atenção do autêntico <em>carinho mineiro</em>.
+            </p>
+</section>
+<!-- Como Trabalhamos Section -->
+<section class="mb-24 reveal">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">Como Desenhamos Sua Viagem</h2>
+<p class="font-body-base text-body-base text-on-surface-variant mt-4">Uma consultoria especializada em três passos simples.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-luminous-white p-8 rounded-[24px] border border-outline-variant/30 text-center glow-hover transition-all duration-300">
+<div class="w-16 h-16 mx-auto bg-surface-container-high rounded-full flex items-center justify-center text-horizon-blue mb-6">
+<span class="material-symbols-outlined" style="font-size: 32px;">psychology</span>
+</div>
+<h3 class="font-subheading text-subheading text-on-surface mb-3">1. Descoberta</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">Entendemos profundamente seus desejos, perfil e expectativas para garantir uma viagem que tenha a sua essência.</p>
+</div>
+<div class="bg-luminous-white p-8 rounded-[24px] border border-outline-variant/30 text-center glow-hover transition-all duration-300">
+<div class="w-16 h-16 mx-auto bg-surface-container-high rounded-full flex items-center justify-center text-horizon-blue mb-6">
+<span class="material-symbols-outlined" style="font-size: 32px;">design_services</span>
+</div>
+<h3 class="font-subheading text-subheading text-on-surface mb-3">2. Design do Roteiro</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">Nossa equipe cria uma proposta exclusiva, selecionando os melhores destinos, hospedagens e experiências.</p>
+</div>
+<div class="bg-luminous-white p-8 rounded-[24px] border border-outline-variant/30 text-center glow-hover transition-all duration-300">
+<div class="w-16 h-16 mx-auto bg-surface-container-high rounded-full flex items-center justify-center text-horizon-blue mb-6">
+<span class="material-symbols-outlined" style="font-size: 32px;">flight_takeoff</span>
+</div>
+<h3 class="font-subheading text-subheading text-on-surface mb-3">3. Realização</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">Você viaja com total tranquilidade, enquanto nós cuidamos de todos os bastidores e oferecemos suporte contínuo.</p>
+</div>
+</div>
+</section>
+<!-- Authority & Trust Section -->
+<section class="mb-24 reveal">
+<div class="bg-horizon-blue rounded-[32px] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-12 text-luminous-white shadow-2xl relative overflow-hidden">
+<!-- Decorative background pattern -->
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined" style="font-size: 300px;">public</span>
+</div>
+<div class="z-10 flex-1">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4">Tranquilidade Sem Fronteiras</h2>
+<p class="font-body-base text-body-base opacity-90 max-w-lg">Sua segurança e conforto são nossas prioridades. Acompanhamos sua jornada de perto, não importa onde você esteja no mundo.</p>
+</div>
+<div class="z-10 flex flex-col sm:flex-row gap-8 flex-1">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-prestige-gold" style="font-size: 40px;">support_agent</span>
+<div>
+<h4 class="font-subheading text-[18px] font-semibold mb-1">Suporte 24h</h4>
+<p class="font-body-base text-sm opacity-80">Assistência contínua em qualquer fuso horário durante sua viagem.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-prestige-gold" style="font-size: 40px;">location_on</span>
+<div>
+<h4 class="font-subheading text-[18px] font-semibold mb-1">Presença Global</h4>
+<p class="font-body-base text-sm opacity-80">Bases estratégicas no Brasil e na Europa para melhor atendê-lo.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout for Contact & Form -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter reveal">
+<!-- Contact Channels (Left Column) -->
+<div class="lg:col-span-5 space-y-gutter">
+<div class="bg-luminous-white border border-outline-variant/30 rounded-[24px] p-8 glow-hover transition-all duration-300 shadow-sm">
+<h2 class="font-subheading text-subheading text-on-surface mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-horizon-blue">forum</span> Atendimento Premium
+                    </h2>
+<div class="space-y-6">
+<a class="flex items-center gap-5 group p-4 rounded-xl hover:bg-soft-mist transition-colors border border-transparent hover:border-outline-variant/20" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-horizon-blue group-hover:bg-horizon-blue group-hover:text-luminous-white transition-colors shadow-sm">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1 uppercase tracking-wider">Base Brasil</p>
+<p class="font-subheading text-[18px] text-on-surface group-hover:text-horizon-blue transition-colors">+55 (31) 99999-9999</p>
+</div>
+</a>
+<a class="flex items-center gap-5 group p-4 rounded-xl hover:bg-soft-mist transition-colors border border-transparent hover:border-outline-variant/20" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-horizon-blue group-hover:bg-horizon-blue group-hover:text-luminous-white transition-colors shadow-sm">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1 uppercase tracking-wider">Base Europa &amp; Mundo</p>
+<p class="font-subheading text-[18px] text-on-surface group-hover:text-horizon-blue transition-colors">+351 91 999 9999</p>
+</div>
+</a>
+<a class="flex items-center gap-5 group p-4 rounded-xl hover:bg-soft-mist transition-colors border border-transparent hover:border-outline-variant/20" href="mailto:contato@uaisotravel.com">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-horizon-blue group-hover:bg-horizon-blue group-hover:text-luminous-white transition-colors shadow-sm">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1 uppercase tracking-wider">E-mail Corporativo</p>
+<p class="font-subheading text-[16px] text-on-surface group-hover:text-horizon-blue transition-colors">contato@uaisotravel.com</p>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-luminous-white border border-outline-variant/30 rounded-[24px] p-8 glow-hover transition-all duration-300 shadow-sm">
+<h2 class="font-subheading text-subheading text-on-surface mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-horizon-blue">share</span> Inspirações Diárias
+                    </h2>
+<a class="flex items-center gap-5 group p-2" href="#">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-horizon-blue group-hover:bg-horizon-blue group-hover:text-luminous-white transition-colors">
+<span class="material-symbols-outlined">photo_camera</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase">Instagram</p>
+<p class="font-body-base text-body-base text-on-surface group-hover:text-horizon-blue transition-colors">@uaisotravel</p>
+</div>
+</a>
+</div>
+</div>
+<!-- Briefing Form (Right Column) -->
+<div class="lg:col-span-7">
+<div class="bg-luminous-white border border-outline-variant/30 rounded-[24px] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.06)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-surface-container-low rounded-bl-[100px] -z-10"></div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Inicie Seu Roteiro</h2>
+<p class="font-body-base text-body-base text-on-surface-variant mb-8">Preencha o formulário abaixo e daremos o primeiro passo rumo à sua próxima grande experiência.</p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase" for="nome">Como gosta de ser chamado?</label>
+<input class="w-full bg-soft-mist border-outline-variant/30 rounded-xl p-4 font-body-base text-body-base text-on-surface focus:ring-2 focus:ring-horizon-blue focus:border-transparent transition-all shadow-inner" id="nome" placeholder="Seu nome ou apelido" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase" for="whatsapp">Seu melhor WhatsApp</label>
+<input class="w-full bg-soft-mist border-outline-variant/30 rounded-xl p-4 font-body-base text-body-base text-on-surface focus:ring-2 focus:ring-horizon-blue focus:border-transparent transition-all shadow-inner" id="whatsapp" placeholder="+55 (00) 00000-0000" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase" for="email">Onde enviamos sua proposta?</label>
+<input class="w-full bg-soft-mist border-outline-variant/30 rounded-xl p-4 font-body-base text-body-base text-on-surface focus:ring-2 focus:ring-horizon-blue focus:border-transparent transition-all shadow-inner" id="email" placeholder="seu.melhor@email.com" type="email"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase" for="estilo">Qual o estilo da jornada?</label>
+<select class="w-full bg-soft-mist border-outline-variant/30 rounded-xl p-4 font-body-base text-body-base text-on-surface focus:ring-2 focus:ring-horizon-blue focus:border-transparent transition-all shadow-inner" id="estilo">
+<option disabled="" selected="" value="">Selecione para inspirar-nos</option>
+<option value="lua_de_mel">Lua de Mel / Romântica</option>
+<option value="familia">Viagem em Família</option>
+<option value="corporativo">Corporativo / Negócios</option>
+<option value="aventura">Aventura &amp; Natureza</option>
+<option value="luxo">Experiência de Luxo &amp; Relax</option>
+<option value="outro">Tenho outra ideia</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase" for="destino">Qual o destino dos seus sonhos?</label>
+<input class="w-full bg-soft-mist border-outline-variant/30 rounded-xl p-4 font-body-base text-body-base text-on-surface focus:ring-2 focus:ring-horizon-blue focus:border-transparent transition-all shadow-inner" id="destino" placeholder="Ex: Ilhas Maldivas, Toscana..." type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase" for="detalhes">Conte-nos mais sobre o que você imagina...</label>
+<textarea class="w-full bg-soft-mist border-outline-variant/30 rounded-xl p-4 font-body-base text-body-base text-on-surface focus:ring-2 focus:ring-horizon-blue focus:border-transparent transition-all shadow-inner resize-none" id="detalhes" placeholder="Datas prováveis, número de pessoas, o que não pode faltar de jeito nenhum na sua viagem perfeita..." rows="4"></textarea>
+</div>
+<button class="btn-primary w-full py-4 mt-6 font-label-caps text-[14px] uppercase tracking-[0.15em] font-bold shadow-lg" type="button">
+                            Solicitar Design do Roteiro
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-padding px-mobile-margin md:px-section-padding flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant/30 mt-12">
+<div class="font-headline-lg text-headline-lg text-horizon-blue mb-6 md:mb-0 font-bold">Uai Sô Travel</div>
+<div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+<a class="text-on-surface-variant hover:text-horizon-blue transition-colors opacity-80 hover:opacity-100 font-body-base text-body-base" href="#">Termos de Uso</a>
+<a class="text-on-surface-variant hover:text-horizon-blue transition-colors opacity-80 hover:opacity-100 font-body-base text-body-base" href="#">Política de Privacidade</a>
+<a class="text-on-surface-variant hover:text-horizon-blue transition-colors opacity-80 hover:opacity-100 font-body-base text-body-base" href="#">WhatsApp BR</a>
+<a class="text-on-surface-variant hover:text-horizon-blue transition-colors opacity-80 hover:opacity-100 font-body-base text-body-base" href="#">WhatsApp PT</a>
+</div>
+<div class="text-on-surface-variant font-body-base text-body-base text-center md:text-right opacity-70">
+            © 2024 Uai Sô Travel. Todos os direitos reservados.
+        </div>
+</footer>
+<!-- Simple Scroll Reveal Script -->
+<script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        reveal();
+    </script>
+</body></html>
