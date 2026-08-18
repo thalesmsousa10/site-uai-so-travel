@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#4f6378"/><stop offset="60%" stop-color="#060d18"/><stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#39e0ff"/><stop offset="100%" stop-color="#dfeaf5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <g transform="translate(800,380)" opacity="0.92">
+        <ellipse cx="0" cy="0" rx="260" ry="70" fill="#0c1622" stroke="#39e0ff" stroke-width="2"/>
+        <rect x="-40" y="-120" width="90" height="70" rx="18" fill="#0c1622" stroke="#39e0ff" stroke-width="2"/>
+        <circle cx="150" cy="0" r="26" fill="none" stroke="#39e0ff" stroke-width="5"/>
+        <circle cx="150" cy="0" r="10" fill="#39e0ff"/>
+        <polygon points="240,-50 340,-16 340,16 240,50" fill="#39e0ff" opacity="0.25"/>
+      </g>
+  <text x="80" y="760" font-family="Georgia,serif" font-size="120" fill="url(#a)" letter-spacing="6">ABYSSAL</text>
+  <text x="86" y="820" font-family="Helvetica,Arial,sans-serif" font-size="30" fill="#dfeaf5" opacity="0.7">How deep will you go?</text>
+</svg>

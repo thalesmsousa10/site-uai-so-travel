@@ -1,0 +1,99 @@
+{
+  "brand": "ABYSSAL",
+  "slug": "abyssal",
+  "provider": "higgsfield",
+  "model": "seedance-2.0",
+  "activeProvider": "stub",
+  "stubbed": true,
+  "generatedRealAssets": false,
+  "heroImage": {
+    "prompt": "the vehicle — sleek deep-black hull, glowing cyan viewport ring, twin floodlights — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark",
+    "stubbed": true,
+    "output": "assets/hero.svg"
+  },
+  "clips": [
+    {
+      "id": "surface",
+      "prompt": "aerial dawn over open ocean; the vehicle slips beneath the waves, ending fully submerged in sunlit blue — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark",
+      "referenceHero": true,
+      "startFrame": null,
+      "endFrame": null,
+      "resolution": "1080p",
+      "stubbed": true,
+      "note": "no HIGGSFIELD_API_KEY / FAL_KEY — clip replaced by procedural frames"
+    },
+    {
+      "id": "sunlit",
+      "prompt": "descent through god rays and bubble columns, a whale silhouette gliding past; the blue deepens — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark",
+      "referenceHero": true,
+      "startFrame": "surface:final",
+      "endFrame": null,
+      "resolution": "1080p",
+      "stubbed": true,
+      "note": "no HIGGSFIELD_API_KEY / FAL_KEY — clip replaced by procedural frames"
+    },
+    {
+      "id": "twilight",
+      "prompt": "light dies to near-black, ghostly jellyfish drift, the floodlights flicker on — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark",
+      "referenceHero": true,
+      "startFrame": "sunlit:final",
+      "endFrame": null,
+      "resolution": "1080p",
+      "stubbed": true,
+      "note": "no HIGGSFIELD_API_KEY / FAL_KEY — clip replaced by procedural frames"
+    },
+    {
+      "id": "midnight",
+      "prompt": "total darkness; bioluminescent creatures spark around the hull like a starfield — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark",
+      "referenceHero": true,
+      "startFrame": "twilight:final",
+      "endFrame": null,
+      "resolution": "1080p",
+      "stubbed": true,
+      "note": "no HIGGSFIELD_API_KEY / FAL_KEY — clip replaced by procedural frames"
+    },
+    {
+      "id": "floor",
+      "prompt": "floodlights sweep across hydrothermal vents; the vehicle holds on a final hero frame — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark",
+      "referenceHero": true,
+      "startFrame": "midnight:final",
+      "endFrame": null,
+      "resolution": "1080p",
+      "stubbed": true,
+      "note": "no HIGGSFIELD_API_KEY / FAL_KEY — clip replaced by procedural frames"
+    }
+  ],
+  "frames": {
+    "count": 48,
+    "dir": "assets/frames",
+    "format": "svg",
+    "pattern": "frame-%03d.svg",
+    "stubbed": true
+  },
+  "missing": [
+    {
+      "what": "Higgsfield API key",
+      "env": "HIGGSFIELD_API_KEY",
+      "why": "authenticate Seedance 2.0 / Nano-Banana calls"
+    },
+    {
+      "what": "Higgsfield base URL (optional)",
+      "env": "HIGGSFIELD_BASE_URL",
+      "default": "https://api.higgsfield.ai/v1"
+    },
+    {
+      "what": "fal.ai key (fallback provider)",
+      "env": "FAL_KEY",
+      "why": "same Seedance 2.0 / Nano-Banana models via fal.ai when Higgsfield is absent"
+    },
+    {
+      "what": "Higgsfield credits",
+      "note": "Seedance 2.0 std/1080p/~8s clips are credit-metered (see the video)"
+    },
+    {
+      "what": "ffmpeg",
+      "check": "installed",
+      "note": "used to decode real clips → frame sequence for frameseq mode"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ABYSSAL — How deep will you go?</title>
+<meta name="description" content="A deep-sea expedition to the ocean floor aboard the EREBUS."/>
+<meta property="og:title" content="ABYSSAL"/>
+<meta property="og:image" content="assets/hero.svg"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%23060d18'/%3E%3Ccircle cx='4' cy='4' r='2' fill='%2339e0ff'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="site.css"/>
+<style>
+  :root {
+    --bg: #060d18; --accent: #39e0ff; --text: #dfeaf5;
+    --serif: "Times New Roman", Georgia, serif;
+  }
+</style>
+</head>
+<body>
+  <div id="veil"><div class="mark">ABYSSAL</div><div class="bar"><i></i></div></div>
+
+  <canvas id="scene"></canvas>
+  <div class="vignette"></div>
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <span>ABYSSAL</span>
+    <span>NO. 02</span>
+  </header>
+  
+  <aside class="hud" aria-hidden="true">
+    <span class="label">DEPTH</span>
+    <div class="rail"><div id="hud-bar"></div></div>
+    <span id="hud-value">0 m</span>
+  </aside>
+
+  <main>
+    <section class="chapter" data-align="left" data-id="hero">
+      <div class="chapter-inner">
+        <div class="kicker">THE SURFACE</div>
+        <h1>How deep will you go?</h1>
+        <div class="hero-sub">A deep-sea expedition to the ocean floor aboard the EREBUS.</div>
+      </div>
+    </section>
+    <section class="chapter" data-align="left" data-id="sunlit">
+      <div class="chapter-inner">
+        <div class="kicker">200 m</div>
+        <h2>99% of sunlight is already gone.</h2>
+        <p class="lead">God rays fade. Bubble columns rise past the viewport.</p>
+      </div>
+    </section>
+    <section class="chapter" data-align="right" data-id="twilight">
+      <div class="chapter-inner">
+        <div class="kicker">1,000 m</div>
+        <h2>Pressure is 100× the surface.</h2>
+        <p class="lead">Ghostly jellyfish drift. The floodlights flicker on.</p>
+      </div>
+    </section>
+    <section class="chapter" data-align="left" data-id="midnight">
+      <div class="chapter-inner">
+        <div class="kicker">2,500 m</div>
+        <h2>No sun has ever reached this water.</h2>
+        <p class="lead">Life makes its own light. The dark sparks around the hull.</p>
+      </div>
+    </section>
+    <section class="chapter" data-align="right" data-id="floor">
+      <div class="chapter-inner">
+        <div class="kicker">3,800 m</div>
+        <h2>Fewer have stood here than have walked on the moon.</h2>
+        <p class="lead">Floodlights sweep the hydrothermal vents.</p>
+      </div>
+    </section>
+    <section class="chapter" data-align="left" data-id="specs">
+      <div class="chapter-inner">
+        <div class="kicker">Specification</div>
+        <div class="specs">
+          <div class="spec"><div class="k">CREW</div><div class="v">2 pilots</div></div>
+          <div class="spec"><div class="k">LIFE SUPPORT</div><div class="v">96 hours</div></div>
+          <div class="spec"><div class="k">DEPTH RATING</div><div class="v">4,000 m</div></div>
+          <div class="spec"><div class="k">SOULS ON BOARD</div><div class="v">8</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="chapter cta" data-align="center" data-id="cta">
+      <div class="chapter-inner">
+        <h2>8 seats. $250,000. Departing March 2027.</h2>
+        <a class="btn" href="#">Join the Manifest</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="scrollcue">scroll ↓</div>
+
+  <script>window.__STORY__ = {"brand":"ABYSSAL","slug":"abyssal","tagline":"How deep will you go?","subtitle":"A deep-sea expedition to the ocean floor aboard the EREBUS.","archetype":"descent","templateId":"02","accent":"#39e0ff","bg":"#060d18","text":"#dfeaf5","camera":{"path":"spline","axis":"y","lookAhead":0.05,"span":210,"radius":0},"waypoints":[{"id":"hero","index":0,"p":0,"pos":[0,0,0],"fog":"#3f7fbf","particle":{"color":"#f2f7fb","count":1500,"style":"bubbles"},"subject":"submarine","light":{"flood":false,"vents":false,"rim":false},"hud":0},{"id":"sunlit","index":1,"p":0.25,"pos":[5.54327719506772,-52.5,0],"fog":"#1f5f9e","particle":{"color":"#c4f1fc","count":1325,"style":"bubbles"},"subject":null,"light":{"flood":false,"vents":false,"rim":false},"hud":200},{"id":"twilight","index":2,"p":0.5,"pos":[4.242640687119286,-105,0],"fog":"#0a2f55","particle":{"color":"#96ecfd","count":1150,"style":"drift"},"subject":null,"light":{"flood":true,"vents":false,"rim":false},"hud":1000},{"id":"midnight","index":3,"p":0.75,"pos":[-2.2961005941905377,-157.5,0],"fog":"#03101f","particle":{"color":"#67e6fe","count":975,"style":"spark"},"subject":null,"light":{"flood":true,"vents":false,"rim":false},"hud":2500},{"id":"floor","index":4,"p":1,"pos":[-6,-210,0],"fog":"#01060c","particle":{"color":"#39e0ff","count":800,"style":"spark"},"subject":null,"light":{"flood":true,"vents":true,"rim":false},"hud":3800}],"hud":{"label":"DEPTH","unit":"m","from":0,"to":3800},"sections":[{"id":"hero","zone":"SURFACE","kicker":"THE SURFACE","title":"How deep will you go?","body":"Eight civilians a year. One submersible. The ocean floor.","carry":null,"hudValue":0,"start":0},{"id":"sunlit","zone":"SUNLIT ZONE","kicker":"200 m","title":"99% of sunlight is already gone.","body":"God rays fade. Bubble columns rise past the viewport.","carry":"final-frame→start-frame","hudValue":200,"start":0.25},{"id":"twilight","zone":"TWILIGHT ZONE","kicker":"1,000 m","title":"Pressure is 100× the surface.","body":"Ghostly jellyfish drift. The floodlights flicker on.","carry":"final-frame→start-frame","hudValue":1000,"start":0.5},{"id":"midnight","zone":"MIDNIGHT ZONE","kicker":"2,500 m","title":"No sun has ever reached this water.","body":"Life makes its own light. The dark sparks around the hull.","carry":"final-frame→start-frame","hudValue":2500,"start":0.75},{"id":"floor","zone":"THE FLOOR","kicker":"3,800 m","title":"Fewer have stood here than have walked on the moon.","body":"Floodlights sweep the hydrothermal vents.","carry":"final-frame→start-frame","hudValue":3800,"start":1}],"continuityMap":[{"from":"hero","to":"sunlit","carry":"final-frame → start-frame","camera":"spline segment 0→1","transition":"seam is a single shared frame (invisible)","fogFrom":"#3f7fbf","fogTo":"#1f5f9e"},{"from":"sunlit","to":"twilight","carry":"final-frame → start-frame","camera":"spline segment 1→2","transition":"seam is a single shared frame (invisible)","fogFrom":"#1f5f9e","fogTo":"#0a2f55"},{"from":"twilight","to":"midnight","carry":"final-frame → start-frame","camera":"spline segment 2→3","transition":"seam is a single shared frame (invisible)","fogFrom":"#0a2f55","fogTo":"#03101f"},{"from":"midnight","to":"floor","carry":"final-frame → start-frame","camera":"spline segment 3→4","transition":"seam is a single shared frame (invisible)","fogFrom":"#03101f","fogTo":"#01060c"}],"specs":[["CREW","2 pilots"],["LIFE SUPPORT","96 hours"],["DEPTH RATING","4,000 m"],["SOULS ON BOARD","8"]],"cta":{"headline":"8 seats. $250,000. Departing March 2027.","button":"Join the Manifest"},"lang":"en","ui":{"scroll":"scroll ↓","specification":"Specification"},"shots":[{"id":"hero-image","kind":"image","prompt":"the vehicle — sleek deep-black hull, glowing cyan viewport ring, twin floodlights — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark","referenceHero":false},{"id":"surface","kind":"clip","prompt":"aerial dawn over open ocean; the vehicle slips beneath the waves, ending fully submerged in sunlit blue — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark","referenceHero":true,"startFrame":null,"endFrame":null},{"id":"sunlit","kind":"clip","prompt":"descent through god rays and bubble columns, a whale silhouette gliding past; the blue deepens — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark","referenceHero":true,"startFrame":"surface:final","endFrame":null},{"id":"twilight","kind":"clip","prompt":"light dies to near-black, ghostly jellyfish drift, the floodlights flicker on — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark","referenceHero":true,"startFrame":"sunlit:final","endFrame":null},{"id":"midnight","kind":"clip","prompt":"total darkness; bioluminescent creatures spark around the hull like a starfield — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark","referenceHero":true,"startFrame":"twilight:final","endFrame":null},{"id":"floor","kind":"clip","prompt":"floodlights sweep across hydrothermal vents; the vehicle holds on a final hero frame — ultra-detailed macro product cinematography, razor-sharp focus on machined micro-detail, shallow depth of field with creamy bokeh, subject suspended in a near-black void, fine dust motes drifting through the light, warm specular key light with soft falloff, accent glints of #39e0ff, physically accurate materials, high dynamic range, subtle volumetric haze, gentle film grain, photorealistic, 8K sharpness, no text, no watermark","referenceHero":true,"startFrame":"midnight:final","endFrame":null}],"generation":{"provider":"higgsfield","model":"seedance-2.0","mode":"std","resolution":"1080p","aspect":"16:9","durationSec":8,"chained":true},"engine":"webgl","frames":{"count":48,"dir":"assets/frames","format":"svg","pattern":"frame-%03d.svg","stubbed":true},"heroImage":"assets/hero.svg"};</script>
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="engine.js"></script>
+  <script>
+    (function () {
+      var veil = document.getElementById('veil');
+      var t = setInterval(function () {
+        if (window.__ENGINE_READY__) { veil.classList.add('gone'); clearInterval(t); }
+      }, 60);
+      setTimeout(function () { veil.classList.add('gone'); }, 4000); // safety
+    })();
+  </script>
+</body>
+</html>
