@@ -14,10 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Inter:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./src/style.css">
-  <!-- Cinematic Smooth Scroll & GSAP Animations -->
-  <script src="./vendor/lenis.min.js"></script>
-  <script src="./vendor/gsap.min.js"></script>
-  <script src="./vendor/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
@@ -65,7 +61,7 @@
 
     <!-- HERO EXPERIENCIAS -->
     <section class="section" style="padding: 70px 0 40px; text-align: center; background: var(--bg-surface-low);">
-      <div class="container reveal-item">
+      <div class="container">
         <span class="section-tag label-caps">[ COLEÇÃO DE CELEBRAÇÕES ]</span>
         <h1 class="section-title">Experiências VIP Sob Medida</h1>
         <p class="section-subtitle" style="max-width: 760px; margin: 0 auto;">
@@ -74,14 +70,14 @@
       </div>
     </section>
 
-    <!-- GRID DE EXPERIÊNCIAS -->
+    <!-- GRID DE EXPERIÊNCIAS (100% VISÍVEIS) -->
     <section class="section">
       <div class="container">
         
         <div class="experiences-grid-3">
           
           <!-- 1. Lua de Mel -->
-          <div class="exp-card-v3 reveal-item">
+          <div class="exp-card-v3">
             <div class="exp-image-wrap">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuASxdLcqiBxT2w_k9kp08EbNG2f_2UI0p7Qzol1qeVOjqWjsddTKWULy2cJgOqW0S6t69ykE_gMuY1gmuN0w0pckoDMc46Rn_4c7Ve3zZ_LX_xU7pHWx2-2Za5Iqtysh6mZ2LK1g5d67wC_xQyOVRS3N6Akkv9nX1O_IeBurtNFpQCsegv09GkWW1HgbHpu4nBEnVFjMrEoNuMuLwFIvbjeGNJfm8cS7eVYraqyXl6xbmj10ctiGvAI2w" alt="Maldivas Lua de Mel">
             </div>
@@ -98,7 +94,7 @@
           </div>
 
           <!-- 2. Formatura -->
-          <div class="exp-card-v3 reveal-item">
+          <div class="exp-card-v3">
             <div class="exp-image-wrap">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZrzWSliqHF_9a_AYyq91U-pfI_Y7NZHinEXu5I3VijD38uvPRC8e4k-fozcwjFKuabIIi0xI2zRd293a5Ct4_nDRRX6BTJdAGRcO-6tkRgYZ7-PlJtrouzWHDhENmE1CZu4NqJ8EV5WM_QRO0dzsaJuJljw2N9HY-PCPjldVrHnpXbTzyJrM7y4X2RBuTNeKJIlDyWV88HRiIBamP_e74O5xUO4jMB9NtCnX0Qi-4Ai-GdWFNNNJcgQ" alt="Cancun Formatura">
             </div>
@@ -115,7 +111,7 @@
           </div>
 
           <!-- 3. Bodas na Toscana -->
-          <div class="exp-card-v3 reveal-item">
+          <div class="exp-card-v3">
             <div class="exp-image-wrap">
               <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800&q=80" alt="Bodas na Toscana">
             </div>
@@ -136,11 +132,11 @@
       </div>
     </section>
 
-    <!-- O QUE ESTÁ INCLUSO NAS EXPERIÊNCIAS -->
+    <!-- O QUE ESTÁ INCLUSO NAS EXPERIÊNCIAS (COM ÍCONES VETORIAIS) -->
     <section class="section" style="background: var(--bg-surface-low);">
       <div class="container">
         
-        <div class="section-header reveal-item">
+        <div class="section-header">
           <span class="section-tag label-caps">[ PADRÃO EXCLUSIVO ]</span>
           <h2 class="section-title">O que toda Experiência VIP inclui</h2>
           <p class="section-subtitle">Você não precisa se preocupar com reservas ou burocracias.</p>
@@ -148,26 +144,49 @@
 
         <div class="services-grid-4">
           
-          <div class="service-card-clean reveal-item">
-            <div class="service-icon-wrap">🥂</div>
+          <div class="service-card-clean">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 22h8M12 15v7M16 4l2 6a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4l2-6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2Z" fill="#FFF9EF"/>
+              </svg>
+            </div>
             <h4 class="service-title-clean">Recepção de Boas-Vindas</h4>
             <p class="service-desc-clean">Champagne no quarto e amenidades especiais preparadas pelo hotel.</p>
           </div>
 
-          <div class="service-card-clean reveal-item">
-            <div class="service-icon-wrap">🚗</div>
+          <div class="service-card-clean">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#003366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 11.1 2 11.5 2 12v4c0 .6.4 1 1 1h2"/>
+                <circle cx="7" cy="17" r="2" fill="#D4AF37"/>
+                <circle cx="17" cy="17" r="2" fill="#D4AF37"/>
+              </svg>
+            </div>
             <h4 class="service-title-clean">Transfers Privativos</h4>
             <p class="service-desc-clean">Carro executivo esperando por você na saída do aeroporto sem filas.</p>
           </div>
 
-          <div class="service-card-clean reveal-item">
-            <div class="service-icon-wrap">⛵</div>
+          <div class="service-card-clean">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#005B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 20a6 6 0 0 0 6 0 6 6 0 0 1 6 0 6 6 0 0 0 6 0 6 6 0 0 1 2 0"/>
+                <path d="M4 17l16-2-2-4H6L4 17z" fill="rgba(0,91,150,0.15)"/>
+                <path d="M12 3v8"/>
+                <path d="M12 4l7 7h-7"/>
+              </svg>
+            </div>
             <h4 class="service-title-clean">Passeios Exclusivos</h4>
             <p class="service-desc-clean">Iates privativos, guias historiadores e acessos sem fila às principais atrações.</p>
           </div>
 
-          <div class="service-card-clean reveal-item">
-            <div class="service-icon-wrap">📱</div>
+          <div class="service-card-clean">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#003366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" fill="rgba(0,51,102,0.1)"/>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                <path d="M2 8c0-2.2 1.8-4 4-4"/>
+              </svg>
+            </div>
             <h4 class="service-title-clean">Concierge Dedicado 24h</h4>
             <p class="service-desc-clean">Um consultor exclusivo no seu WhatsApp durante todos os dias da viagem.</p>
           </div>
@@ -180,7 +199,7 @@
     <!-- BANNER DE CONTATO -->
     <section class="section">
       <div class="container">
-        <div class="contact-cta-solar reveal-item">
+        <div class="contact-cta-solar">
           <span class="label-caps" style="color: var(--primary-ochre); margin-bottom: 14px;">[ MOMENTO ÚNICO ]</span>
           <h2 class="contact-cta-title">Quer criar uma celebração inesquecível sob medida?</h2>
           <div class="contact-cta-btns">

@@ -14,10 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Inter:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./src/style.css">
-  <!-- Cinematic Smooth Scroll & GSAP Animations -->
-  <script src="./vendor/lenis.min.js"></script>
-  <script src="./vendor/gsap.min.js"></script>
-  <script src="./vendor/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
@@ -65,7 +61,7 @@
 
     <!-- HERO DESTINOS -->
     <section class="section" style="padding: 70px 0 40px; text-align: center; background: var(--bg-surface-low);">
-      <div class="container reveal-item">
+      <div class="container">
         <span class="section-tag label-caps">[ COLEÇÃO EXCLUSIVA DE ROTEIROS ]</span>
         <h1 class="section-title">Destinos que Vão Fazer Você Sonhar</h1>
         <p class="section-subtitle" style="max-width: 760px; margin: 0 auto;">
@@ -78,7 +74,7 @@
     <section class="section">
       <div class="container">
         
-        <div class="destinations-filter-row reveal-item">
+        <div class="destinations-filter-row">
           <button class="filter-btn active" data-filter="all">Todos os Destinos</button>
           <button class="filter-btn" data-filter="praia">Praias Paradisíacas</button>
           <button class="filter-btn" data-filter="historia">Cidades Históricas</button>
@@ -86,11 +82,11 @@
           <button class="filter-btn" data-filter="luxo">Alto Luxo</button>
         </div>
 
-        <!-- GRID DE DESTINOS -->
+        <!-- GRID DE DESTINOS (100% VISÍVEIS) -->
         <div class="destinations-grid-4">
           
           <!-- 1. Minas Gerais -->
-          <div class="dest-card-v4 reveal-item dest-card" data-category="natureza">
+          <div class="dest-card-v4 dest-card" data-category="natureza">
             <img src="./assets/destination_minas.png" alt="Minas Gerais Brasil" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -104,7 +100,7 @@
           </div>
 
           <!-- 2. Portugal -->
-          <div class="dest-card-v4 reveal-item dest-card" data-category="historia">
+          <div class="dest-card-v4 dest-card" data-category="historia">
             <img src="./assets/destination_portugal.png" alt="Lisboa e Portugal" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -118,7 +114,7 @@
           </div>
 
           <!-- 3. Dubai -->
-          <div class="dest-card-v4 reveal-item dest-card" data-category="luxo">
+          <div class="dest-card-v4 dest-card" data-category="luxo">
             <img src="./assets/destination_dubai.png" alt="Dubai Emirados" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -132,7 +128,7 @@
           </div>
 
           <!-- 4. Santorini -->
-          <div class="dest-card-v4 reveal-item dest-card" data-category="praia">
+          <div class="dest-card-v4 dest-card" data-category="praia">
             <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80" alt="Santorini Grécia" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -146,7 +142,7 @@
           </div>
 
           <!-- 5. Nova York -->
-          <div class="dest-card-v4 reveal-item dest-card" data-category="luxo">
+          <div class="dest-card-v4 dest-card" data-category="luxo">
             <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80" alt="Nova York" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -160,7 +156,7 @@
           </div>
 
           <!-- 6. Paris -->
-          <div class="dest-card-v4 reveal-item dest-card" data-category="historia">
+          <div class="dest-card-v4 dest-card" data-category="historia">
             <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80" alt="Paris França" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -181,7 +177,7 @@
     <!-- BANNER DE CONTATO -->
     <section class="section" style="padding-top: 0;">
       <div class="container">
-        <div class="contact-cta-solar reveal-item">
+        <div class="contact-cta-solar">
           <span class="label-caps" style="color: var(--primary-ochre); margin-bottom: 14px;">[ DESTINO SOB MEDIDA ]</span>
           <h2 class="contact-cta-title">Não encontrou o destino que sonha na lista?</h2>
           <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto 28px;">

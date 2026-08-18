@@ -14,10 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Inter:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./src/style.css">
-  <!-- Cinematic Smooth Scroll & GSAP Animations -->
-  <script src="./vendor/lenis.min.js"></script>
-  <script src="./vendor/gsap.min.js"></script>
-  <script src="./vendor/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
@@ -71,7 +67,7 @@
       <div class="hero-overlay-light"></div>
 
       <div class="container">
-        <div class="hero-content reveal-item">
+        <div class="hero-content">
           
           <div class="hero-tag-pill">
             <span class="hero-tag-dot"></span>
@@ -98,25 +94,41 @@
             </a>
           </div>
 
-          <!-- 3 Pilares com Subtítulos Claros -->
+          <!-- 3 Pilares com Ícones Vetoriais SVG -->
           <div class="hero-features-grid">
+            
             <div class="feature-pill-card">
-              <div class="feature-icon-circle">✨</div>
+              <div class="feature-icon-circle">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h9"/>
+                  <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                </svg>
+              </div>
               <h3 class="feature-title">100% Personalizado</h3>
-              <p class="feature-desc">Roteiros desenhados exclusivamente para o seu ritmo, perfil e orçamento.</p>
+              <p class="feature-desc">Roteiros desenhados exclusivamente para o seu ritmo, estilo e desejos.</p>
             </div>
 
             <div class="feature-pill-card">
-              <div class="feature-icon-circle">🤝</div>
+              <div class="feature-icon-circle">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#005B96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                </svg>
+              </div>
               <h3 class="feature-title">Suporte Biconectado</h3>
               <p class="feature-desc">Atendimento contínuo e acolhedor com bases no Brasil (BR) e em Portugal (PT).</p>
             </div>
 
             <div class="feature-pill-card">
-              <div class="feature-icon-circle">⭐</div>
+              <div class="feature-icon-circle">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#705D00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="rgba(255,215,0,0.2)"/>
+                </svg>
+              </div>
               <h3 class="feature-title">Curadoria Exclusiva</h3>
               <p class="feature-desc">Seleção rigorosa de hotéis 5 estrelas, salas VIP e passeios privativos no mundo todo.</p>
             </div>
+
           </div>
 
         </div>
@@ -127,7 +139,7 @@
     <section class="section" style="background: var(--bg-surface-low);">
       <div class="container">
         
-        <div class="bento-founder-grid reveal-item">
+        <div class="bento-founder-grid">
           
           <div class="founder-image-wrapper">
             <img src="./assets/founder_liliam.png" alt="Dra. Liliam Silva" class="founder-img">
@@ -174,7 +186,7 @@
     <section class="section" id="experiencias-sec">
       <div class="container">
         
-        <div class="section-header reveal-item">
+        <div class="section-header">
           <span class="section-tag label-caps">[ DATAS COMEMORATIVAS ]</span>
           <h2 class="section-title">Experiências VIP</h2>
           <p class="section-subtitle">Roteiros selecionados com acompanhamento VIP para momentos inesquecíveis.</p>
@@ -183,7 +195,7 @@
         <div class="experiences-grid-3">
           
           <!-- Card 1: Lua de Mel -->
-          <div class="exp-card-v3 reveal-item">
+          <div class="exp-card-v3">
             <div class="exp-image-wrap">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuASxdLcqiBxT2w_k9kp08EbNG2f_2UI0p7Qzol1qeVOjqWjsddTKWULy2cJgOqW0S6t69ykE_gMuY1gmuN0w0pckoDMc46Rn_4c7Ve3zZ_LX_xU7pHWx2-2Za5Iqtysh6mZ2LK1g5d67wC_xQyOVRS3N6Akkv9nX1O_IeBurtNFpQCsegv09GkWW1HgbHpu4nBEnVFjMrEoNuMuLwFIvbjeGNJfm8cS7eVYraqyXl6xbmj10ctiGvAI2w" alt="Maldivas Lua de Mel">
             </div>
@@ -198,7 +210,7 @@
           </div>
 
           <!-- Card 2: Formatura -->
-          <div class="exp-card-v3 reveal-item">
+          <div class="exp-card-v3">
             <div class="exp-image-wrap">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZrzWSliqHF_9a_AYyq91U-pfI_Y7NZHinEXu5I3VijD38uvPRC8e4k-fozcwjFKuabIIi0xI2zRd293a5Ct4_nDRRX6BTJdAGRcO-6tkRgYZ7-PlJtrouzWHDhENmE1CZu4NqJ8EV5WM_QRO0dzsaJuJljw2N9HY-PCPjldVrHnpXbTzyJrM7y4X2RBuTNeKJIlDyWV88HRiIBamP_e74O5xUO4jMB9NtCnX0Qi-4Ai-GdWFNNNJcgQ" alt="Cancun Formatura">
             </div>
@@ -213,7 +225,7 @@
           </div>
 
           <!-- Card 3: Aniversário -->
-          <div class="exp-card-v3 reveal-item">
+          <div class="exp-card-v3">
             <div class="exp-image-wrap">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmNuvOHa6M7LqyIsRwsh-2NBLAGUpW0OqAX0ffbaCgZULxz2tES8y2fhiRNhXKIbHVo7AcJlHt6Jt1e9fjS9I2_Hi3cShqQ-jfboJkvWTKX1iTHmoavtYNpi3O6s_I3EMCcwrzPuUzHdxdgAMQ3TaxSF-zAOE1DfsBvXZaqjU5QiYTNJ9Gf2avbHGdi3eKls3xiIpZX_Wk9SwGqnS6m2BSNEpp84IF4A1sMjrw7II_az53UfgUIy9SgQ" alt="Nova York Aniversário">
             </div>
@@ -232,11 +244,11 @@
       </div>
     </section>
 
-    <!-- 5. NOSSOS SERVIÇOS (COMO CUIDAMOS DA SUA VIAGEM) -->
+    <!-- 5. NOSSOS SERVIÇOS (COMO CUIDAMOS DA SUA VIAGEM) COM ÍCONES VETORIAIS -->
     <section class="section" style="background: var(--bg-surface-low); border-top: 1px solid var(--outline-border); border-bottom: 1px solid var(--outline-border);">
       <div class="container">
         
-        <div class="section-header reveal-item">
+        <div class="section-header">
           <span class="section-tag label-caps">[ NOSSOS SERVIÇOS ]</span>
           <h2 class="section-title">Como cuidamos da sua viagem</h2>
           <p class="section-subtitle">Apoio completo em todas as fases para que você só se preocupe em curtir.</p>
@@ -244,26 +256,47 @@
 
         <div class="services-grid-4">
           
-          <div class="service-card-clean reveal-item">
-            <div class="service-icon-wrap">🗺️</div>
+          <div class="service-card-clean">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" fill="#FFF9EF"/>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="#D4AF37"/>
+              </svg>
+            </div>
             <h4 class="service-title-clean">Roteiros Sob Medida</h4>
             <p class="service-desc-clean">Planejamento detalhado dia a dia, com paradas e atrações que combinam com seu estilo.</p>
           </div>
 
-          <div class="service-card-clean reveal-item">
-            <div class="service-icon-wrap">✈️</div>
+          <div class="service-card-clean">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#005B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z" fill="rgba(0,91,150,0.15)"/>
+              </svg>
+            </div>
             <h4 class="service-title-clean">Passagens Executivas</h4>
             <p class="service-desc-clean">Gestão de bilhetes com os melhores horários, conexões ágeis e upgrades exclusivos.</p>
           </div>
 
-          <div class="service-card-clean reveal-item">
-            <div class="service-icon-wrap">🏨</div>
+          <div class="service-card-clean">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#705D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z" fill="#FFF9EF"/>
+                <path d="m9 16 .348-.24c1.465-1.013 3.84-1.013 5.304 0L15 16"/>
+                <path d="M8 6h.01M16 6h.01M12 6h.01M8 10h.01M16 10h.01M12 10h.01"/>
+              </svg>
+            </div>
             <h4 class="service-title-clean">Hotelaria de Luxo</h4>
             <p class="service-desc-clean">Parcerias com redes 5 estrelas, café da manhã premium e comodidades VIP nos quartos.</p>
           </div>
 
-          <div class="service-card-clean reveal-item">
-            <div class="service-icon-wrap">🛎️</div>
+          <div class="service-card-clean">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#003366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" fill="rgba(0,51,102,0.1)"/>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                <path d="M2 8c0-2.2 1.8-4 4-4"/>
+              </svg>
+            </div>
             <h4 class="service-title-clean">Concierge 24h</h4>
             <p class="service-desc-clean">Canal direto no WhatsApp para tirar dúvidas, remarcações e reservas gastronômicas.</p>
           </div>
@@ -273,11 +306,11 @@
       </div>
     </section>
 
-    <!-- 6. DESTINOS DO MÊS -->
+    <!-- 6. DESTINOS DO MÊS (100% VISÍVEIS) -->
     <section class="section" id="destinos-sec">
       <div class="container">
         
-        <div class="section-header reveal-item">
+        <div class="section-header">
           <span class="section-tag label-caps">[ DESTINOS EM ALTA ]</span>
           <h2 class="section-title">Lugares que vão fazer você sonhar</h2>
           <p class="section-subtitle">Roteiros especiais com curadoria assinada para este mês.</p>
@@ -286,7 +319,7 @@
         <div class="destinations-grid-4">
           
           <!-- Santorini -->
-          <a href="destinos.html" class="dest-card-v4 reveal-item">
+          <a href="destinos.html" class="dest-card-v4">
             <img src="https://lh3.googleusercontent.com/aida/AP1WRLsUnYXx5pUtYElY98iwFFp5kM81dxTSCIeM_nnZ6DfyfVKtv2B_a-ebgPyAh1veFL9gD4c5dMZ9ROTf9bN5Bv6AXGEPAmwZ-fl5UrflVIquPMkq-fYEolKuQNu54xAKMQzGkkP2c7u-DPIwXyLNz7jlge2ErEWL9ZP85BtLee4SV1tmhVCJOw9GfkFY_sF3jqzy3sFj-rIfZpvKVuDPTODgRqn_iCXCuUNEXrS6wLWXLUMfCUes7Yu_R051" alt="Santorini" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -297,7 +330,7 @@
           </a>
 
           <!-- Dubai -->
-          <a href="destinos.html" class="dest-card-v4 reveal-item">
+          <a href="destinos.html" class="dest-card-v4">
             <img src="https://lh3.googleusercontent.com/aida/AP1WRLvkFZ7iAxRjuLJtw_mXsuCq8zuAPDj9J9f7kv-emx9C-ICC8xCr2B2DLowfDNVq6efZBDo-j0p1Ddn3kkpsctPwbUwxbt_Q80aS4ck2hgIkwPJiawxgzljRgLYMvZESjAGGrew5S1ESgDVnX3_JJKIeN-mkeFX0_GqF0fIr46A1bQ5YsgfZPQNKzTQFE4EXmbOeaPpMk9u7_VJiXUI6WNo7VgGUaVmiw7Ukxo_aiIgCKBPIn89JFWLiaXM" alt="Dubai" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -308,7 +341,7 @@
           </a>
 
           <!-- Portugal -->
-          <a href="destinos.html" class="dest-card-v4 reveal-item">
+          <a href="destinos.html" class="dest-card-v4">
             <img src="https://lh3.googleusercontent.com/aida/AP1WRLshYNStct2FX33VpY05LgjUvft_5KkkOCWBSEb-zDAdQbUi8NdrbVw0UmpD-A84PB4XZ7dDhOkj9Qa_kuILLTypRI_Sp2GQJVw92q-9cf6InUZNSlpSNUkP_f_VTa4H4PerxPGw_HaWR-1crXmuwyeNJcsjkQ5iT0p6TBPRSX_KloeZUJFPsVTGklTaw-Lfm5e780Gvpbi7iU_ua9q6gyryc1Ajc8fJiFfNWk_mSjYW0xw8ERqug1gpOWAH" alt="Lisboa Portugal" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -319,7 +352,7 @@
           </a>
 
           <!-- Minas Gerais -->
-          <a href="destinos.html" class="dest-card-v4 reveal-item">
+          <a href="destinos.html" class="dest-card-v4">
             <img src="https://lh3.googleusercontent.com/aida/AP1WRLsqR5C15_zfHfJFEELkifJZ0LC9BwkIFNsnpSVAm0CiqUgYwtIjYRMBIDmX-ruaeu7w3UOV9NcIWOKRbOkjLb-l6HfpQMwLfXgNRs6ksVc30_inL8th_BsaQSApYCefcnKBycMpeimiYZcMt9wspklPkc10EEU6MnuP_SlVKk7lTfPmwr1nCPg-Ltjnb4JdtqzsGh-fYLfxWgDG6MeeZ4mr2pJTQM4Xpr5TG2KDxe74TYiL59mjjEhJVVH9" alt="Minas Gerais" class="dest-bg-img">
             <div class="dest-gradient-overlay"></div>
             <div class="dest-card-content">
@@ -338,7 +371,7 @@
     <section class="section" style="padding-top: 0;">
       <div class="container">
         
-        <div class="contact-cta-solar reveal-item">
+        <div class="contact-cta-solar">
           <span class="label-caps" style="color: var(--primary-ochre); margin-bottom: 14px;">[ ATENDIMENTO VIP & CONSULTORIA ]</span>
           <h2 class="contact-cta-title">Vamos planejar a sua próxima grande história?</h2>
           
