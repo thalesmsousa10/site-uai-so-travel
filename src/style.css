@@ -930,12 +930,6 @@ h1, h2, h3, h4, .font-display {
    SCROLL REVEAL (Cascata Dinâmica)
    ========================================================================== */
 .reveal-item {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reveal-item.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
